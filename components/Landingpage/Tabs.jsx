@@ -4,13 +4,12 @@ import { motion, AnimatePresence } from "framer-motion";
 import { FaCheckCircle } from "react-icons/fa";
 import Image from "next/image";
 
-const tabs = [  
+const tabs = [
   {
     id: 1,
     title: "Driving India’s Industrial Growth",
     description: `Salford is dedicated to supporting India’s rapidly growing industrial landscape by ensuring reliable access to premium titanium dioxide (TiO₂). As a foreign trading partner, we understand the unique challenges and opportunities in the Indian market. Our goal is to provide businesses with a consistent supply of world-class TiO₂, helping them meet international standards, enhance product quality, and stay competitive in a dynamic economy.
-We focus on creating value for Indian industries through a combination of expertise, service, and reliability:
-`,
+We focus on creating value for Indian industries through a combination of expertise, service, and reliability:`,
     points: [
       "Timely Deliveries – Efficient logistics and inventory management ensure clients receive materials when they need them.",
       "Tailored Solutions – Flexible grades, packaging, and volumes to match specific industry requirements.",
@@ -35,8 +34,7 @@ We focus on creating value for Indian industries through a combination of expert
     id: 3,
     title: "Building Long-Term Partnerships",
     description: `At Salford, our mission goes beyond supplying titanium dioxide (TiO₂); we aim to establish lasting partnerships with Indian industries. We believe that strong, long-term relationships are built on trust, reliability, and mutual growth. By working closely with our clients, we help them navigate market challenges, plan for the future, and maintain a consistent supply of high-quality TiO₂ for their operations.
-We focus on fostering partnerships through several key initiatives:
-`,
+We focus on fostering partnerships through several key initiatives:`,
     points: [
       "Collaborative Approach – Tailoring solutions to industry needs.",
       "Reliable Supply – Consistent availability in all markets.",
@@ -59,8 +57,8 @@ export default function PremiumTabs() {
   }, []);
 
   return (
-    <section className="relative w-full py-16">
-      {/* Background Image */}
+    <section className="relative w-full py-20 overflow-hidden">
+      {/* Animated Background */}
       <AnimatePresence mode="wait">
         <motion.div
           key={tabs[activeIndex].id}
@@ -74,26 +72,27 @@ export default function PremiumTabs() {
             src={tabs[activeIndex].image}
             alt={tabs[activeIndex].title}
             fill
-            className="object-cover"
+            className="object-cover "
             priority
           />
+  
         </motion.div>
       </AnimatePresence>
 
       {/* Content */}
-      <div className="max-w-7xl py-10 mx-auto grid md:grid-cols-2 gap-12 items-center px-6 relative z-10 text-white">
+      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center px-6 relative z-10">
         {/* LEFT CONTENT */}
         <div className="flex flex-col">
-          {/* Tab Headers */}
-          <div className="flex border-b border-black/40 mb-8">
+          {/* Tab Buttons */}
+          <div className="flex flex-wrap border-b border-[#1B5AA2]/30 mb-8">
             {tabs.map((tab, index) => (
               <button
                 key={tab.id}
                 onClick={() => setActiveIndex(index)}
-                className={`relative px-5 py-3 text-2xl font-medium transition-all ${
+                className={`relative px-4 py-2 text-lg md:text-xl font-semibold transition-all ${
                   index === activeIndex
                     ? "text-[#1B5AA2]"
-                    : "text-black hover:text-blue-700"
+                    : "text-gray-600 hover:text-[#1B5AA2]"
                 }`}
               >
                 {tab.title.split(" ")[0]}
@@ -107,34 +106,37 @@ export default function PremiumTabs() {
             ))}
           </div>
 
-          {/* Tab Content */}
+          {/* Active Tab Content */}
           <AnimatePresence mode="wait">
             <motion.div
               key={tabs[activeIndex].id}
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -20 }}
+              exit={{ opacity: 0, y: -30 }}
               transition={{ duration: 0.6 }}
             >
-              <h2 className="text-3xl md:text-4xl text-[#00537B] font-extrabold mb-6">
+              <h2 className="text-3xl md:text-4xl font-extrabold text-[#00537B] mb-5">
                 {tabs[activeIndex].title}
               </h2>
-              <p className="text-lg text-black leading-relaxed mb-6">
+              <p className="text-base md:text-lg text-gray-700 leading-relaxed mb-6 whitespace-pre-line">
                 {tabs[activeIndex].description}
               </p>
-             <ul className="space-y-3">
-  {tabs[activeIndex].points.map((point, idx) => (
-    <li key={idx} className="flex items-start gap-3">
-      <FaCheckCircle className="text-[#1B5AA2] text-2xl mt-1 flex-shrink-0" />
-      <span className="text-black text-lg">{point}</span>
-    </li>
-  ))}
-</ul>
+
+              <ul className="space-y-3">
+                {tabs[activeIndex].points.map((point, idx) => (
+                  <li key={idx} className="flex items-start gap-3">
+                    <FaCheckCircle className="text-[#1B5AA2] text-xl mt-1 flex-shrink-0" />
+                    <span className="text-gray-800 text-base md:text-lg leading-snug">
+                      {point}
+                    </span>
+                  </li>
+                ))}
+              </ul>
             </motion.div>
           </AnimatePresence>
         </div>
 
-        {/* Empty Right Column (kept for layout symmetry) */}
+        {/* Placeholder for layout symmetry */}
         <div className="hidden md:block" />
       </div>
     </section>
