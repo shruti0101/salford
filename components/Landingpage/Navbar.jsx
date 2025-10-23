@@ -118,7 +118,7 @@ export default function Navbar() {
           />
           <div className="relative w-3/4 max-w-xs bg-[#00537B] text-white h-full shadow-lg p-6 flex flex-col animate-slideIn">
             <div className="flex justify-between items-center mb-6">
-              <Image src="/logo.webp" alt="Logo" width={90} height={45} />
+              <Image src="/about/logo.jpg" alt="Logo" width={90} height={45} />
               <button onClick={() => setMobileOpen(false)}>
                 <X size={26} />
               </button>

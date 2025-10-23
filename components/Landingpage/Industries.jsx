@@ -15,22 +15,19 @@ const industries = [
 
 export default function IndustriesSection() {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [visibleCount, setVisibleCount] = useState(2); // default desktop value
 
-  // Show fewer cards on mobile
-  const visibleCount =
-    typeof window !== "undefined" && window.innerWidth < 640
-      ? 1
-      : window.innerWidth < 1024
-      ? 2
-      : 2;
-
+  // Handle responsiveness safely on the client
   useEffect(() => {
-    const handleResize = () => {
-      // Adjust slider responsiveness when resizing
-      setCurrentIndex(0);
+    const updateVisibleCount = () => {
+      if (window.innerWidth < 640) setVisibleCount(1);
+      else if (window.innerWidth < 1024) setVisibleCount(2);
+      else setVisibleCount(2);
     };
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
+
+    updateVisibleCount(); // Run once on mount
+    window.addEventListener("resize", updateVisibleCount);
+    return () => window.removeEventListener("resize", updateVisibleCount);
   }, []);
 
   useEffect(() => {
