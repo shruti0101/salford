@@ -5,7 +5,6 @@ import { categories } from "@/Data";
 
 const plasticsProducts = categories.find((c) => c.id === "plastics")?.products ?? [];
 
-
 export default function ProductsPage() {
   const renderProductCard = (product) => (
     <Link
@@ -72,6 +71,7 @@ export default function ProductsPage() {
         style={{ backgroundImage: "url('/category/plastic.jpg')" }}
       />
 
+      {/* Plastics Section */}
       {renderSection(
         "Titanium Dioxide Solutions for Plastics",
         "High-Performance Pigments Delivering Exceptional Results",
@@ -89,97 +89,77 @@ Through proactive product stewardship, Salford enhances product performance whil
         plasticsProducts
       )}
 
-
-
-
-
-
-
       {/* Scrollable Product List Section */}
-<section className="relative bg-white py-20">
-  <div className="max-w-6xl mx-auto px-6 md:px-12">
-    <h2 className="text-3xl md:text-4xl font-bold text-center mb-10 text-[#004C91]">
-      Salford TiO₂ Product Grades for Plastics
-    </h2>
+      <section className="relative bg-white py-20">
+        <div className="max-w-6xl mx-auto px-6 md:px-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-10 text-[#004C91]">
+            Salford TiO₂ Product Grades for Plastics
+          </h2>
 
-    <div className=" overflow-y-auto h-[70vh] shadow-lg rounded-2xl border border-gray-200">
-      <table className="min-w-full bg-white text-left">
-        <thead className="bg-gradient-to-r from-[#4A90E2] to-[#357ABD] text-white">
-          <tr>
-            <th className="py-4 px-6 font-semibold text-lg">Product</th>
-            <th className="py-4 px-6 font-semibold text-lg">Applications</th>
-          </tr>
-        </thead>
+          <div className="overflow-y-auto h-[70vh] shadow-lg rounded-2xl border border-gray-200">
+            <table className="min-w-full bg-white text-left">
+              <thead className="bg-gradient-to-r from-[#4A90E2] to-[#357ABD] text-white">
+                <tr>
+                  <th className="py-4 px-6 font-semibold text-lg">Product</th>
+                  <th className="py-4 px-6 font-semibold text-lg">Applications</th>
+                </tr>
+              </thead>
 
-    <tbody className="divide-y divide-gray-100">
-
-  <tr className="hover:bg-blue-50 transition">
-    <td className="py-5 px-6 font-semibold text-[#004C91]">SALFORD 201</td>
-    <td className="py-5 px-6 space-y-2 text-gray-700">
-      <p>High-temperature cast and extrusion coating films</p>
-      <p>Extrusion coated paper</p>
-      <p>High-quality color masterbatch</p>
-    </td>
-  </tr>
-
-  <tr className="hover:bg-blue-50 transition">
-    <td className="py-5 px-6 font-semibold text-[#004C91]">SALFORD 250</td>
-    <td className="py-5 px-6 space-y-2 text-gray-700">
-      <p>ABS parts for automotive</p>
-      <p>Appliances colour stability under UV stress</p>
-      <p>Thermoplastic masterbatches</p>
-      <p>High-performance films such polypropylene (BOPP) for snack packaging</p>
-    </td>
-  </tr>
-
-  <tr className="hover:bg-blue-50 transition">
-    <td className="py-5 px-6 font-semibold text-[#004C91]">SALFORD 280</td>
-    <td className="py-5 px-6 space-y-2 text-gray-700">
-      <p>Polyolefin masterbatch</p>
-      <p>Styrenics</p>
-      <p>ABS</p>
-      <p>Flexible PVC and plastisols</p>
-    </td>
-  </tr>
-
-  <tr className="hover:bg-blue-50 transition">
-    <td className="py-5 px-6 font-semibold text-[#004C91]">SALFORD 260</td>
-    <td className="py-5 px-6 space-y-2 text-gray-700">
-      <p>Building products for intense, colored outdoor applications such as windows, gutters, decks, and fences</p>
-      <p>Stadium seats</p>
-      <p>High-end patio furniture</p>
-      <p>Automotive body panels</p>
-    </td>
-  </tr>
-
-  <tr className="hover:bg-blue-50 transition">
-    <td className="py-5 px-6 font-semibold text-[#004C91]">SALFORD 269</td>
-    <td className="py-5 px-6 space-y-2 text-gray-700">
-      <p>Polyolefin masterbatch</p>
-      <p>Styrenics</p>
-      <p>Interior rigid PVC</p>
-      <p>ABS</p>
-      <p>Flexible PVC and plastisols</p>
-    </td>
-  </tr>
-
-  <tr className="hover:bg-blue-50 transition">
-    <td className="py-5 px-6 font-semibold text-[#004C91]">SALFORD 288</td>
-    <td className="py-5 px-6 space-y-2 text-gray-700">
-      <p>Masterbatches and compound</p>
-      <p>PVC films</p>
-      <p>Polystyrene and copolymers</p>
-      <p>Engineering plastic</p>
-    </td>
-  </tr>
-
-</tbody>
-
-      </table>
-    </div>
-  </div>
-</section>
-
+              <tbody className="divide-y divide-gray-100">
+                {[
+                  {
+                    name: "SALFORD 201",
+                    apps: [
+                      "High-temperature cast and extrusion coating films",
+                      "Extrusion coated paper",
+                      "High-quality color masterbatch",
+                    ],
+                  },
+                  {
+                    name: "SALFORD 250",
+                    apps: [
+                      "ABS parts for automotive",
+                      "Appliances colour stability under UV stress",
+                      "Thermoplastic masterbatches",
+                      "High-performance films such polypropylene (BOPP) for snack packaging",
+                    ],
+                  },
+                  {
+                    name: "SALFORD 280",
+                    apps: ["Polyolefin masterbatch", "Styrenics", "ABS", "Flexible PVC and plastisols"],
+                  },
+                  {
+                    name: "SALFORD 260",
+                    apps: [
+                      "Building products for outdoor use (windows, gutters, decks, fences)",
+                      "Stadium seats",
+                      "High-end patio furniture",
+                      "Automotive body panels",
+                    ],
+                  },
+                  {
+                    name: "SALFORD 269",
+                    apps: ["Polyolefin masterbatch", "Styrenics", "Interior rigid PVC", "ABS", "Flexible PVC and plastisols"],
+                  },
+                  {
+                    name: "SALFORD 288",
+                    apps: ["Masterbatches and compound", "PVC films", "Polystyrene and copolymers", "Engineering plastic"],
+                  },
+                ].map((product, idx) => (
+                  <tr key={idx} className="hover:bg-blue-50 transition">
+                    <td className="py-5 px-6 font-semibold text-[#004C91]">{product.name}</td>
+                    <td className="py-5 px-6 space-y-2 text-gray-700">
+                      {product.apps.map((a, i) => (
+                        <p key={i}>{a}</p>
+                      ))}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
     </>
   );
 }

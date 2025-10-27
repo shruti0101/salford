@@ -3,10 +3,12 @@ import { useState } from "react";
 import { ChevronDown, Menu, X } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import Popup from "./Popup";
 
 export default function Navbar() {
   const [openMenu, setOpenMenu] = useState(null);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [isFormOpen, setIsFormOpen] = useState(false);
 
   const menuItems = [
     { label: "About Us", link: "/about-us" },
@@ -26,14 +28,14 @@ export default function Navbar() {
 
   return (
     <header className="fixed  border-b border-black shadow-md top-0 left-0 w-full z-50 bg-white transition-all duration-500">
-      <div className="w-full mx-auto flex items-center justify-between px-15 py-3">
+      <div className="w-full mx-auto flex items-center justify-between px-7 md:px-15 py-3">
         {/* Logo */}
         <Link href="/">
           <div className="flex items-center flex-shrink-0">
             <Image
               src="/about/logo.jpg"
               alt="Logo"
-              width={110}
+              width={100}
               height={65}
               className="rounded-2xl"
             />
@@ -41,7 +43,7 @@ export default function Navbar() {
         </Link>
 
         {/* Desktop Menu */}
-        <nav className="hidden lg:flex flex-1 justify-center items-center gap-10 font-semibold relative text-xl">
+        <nav className="hidden lg:flex flex-1 justify-center items-center gap-10 font-semibold relative text-lg">
           {menuItems.map((item, idx) => (
             <div
               key={idx}
@@ -90,7 +92,7 @@ export default function Navbar() {
 
         {/* Desktop CTA */}
         <div className="hidden lg:flex items-center gap-4">
-          <button className="relative px-6 py-3 rounded-full font-semibold bg-gradient-to-r from-[#8AB0C2] to-[#0082C8] text-white shadow-lg overflow-hidden group hover:scale-105 transition-transform duration-300">
+          <button onClick={() => setIsFormOpen(true)} className="relative px-6 py-3 rounded-full font-semibold bg-gradient-to-r from-[#8AB0C2] to-[#0082C8] text-white shadow-lg overflow-hidden group hover:scale-105 transition-transform duration-300">
             <span className="absolute inset-0 bg-white opacity-10 -translate-x-full group-hover:translate-x-0 transform transition-transform duration-500"></span>
             Request a Quote
           </button>
@@ -118,13 +120,13 @@ export default function Navbar() {
           />
           <div className="relative w-3/4 max-w-xs bg-[#00537B] text-white h-full shadow-lg p-6 flex flex-col animate-slideIn">
             <div className="flex justify-between items-center mb-6">
-              <Image src="/about/logo.jpg" alt="Logo" width={90} height={45} />
+              <Image src="/about/logo.jpg" alt="Logo" width={80} height={45} />
               <button onClick={() => setMobileOpen(false)}>
                 <X size={26} />
               </button>
             </div>
 
-            <nav className="flex flex-col gap-4">
+            <nav onClick={() => setMobileOpen(false)} className="flex flex-col gap-4">
               {menuItems.map((item, idx) => (
                 <div key={idx}>
                   <Link
@@ -161,7 +163,7 @@ export default function Navbar() {
                 </button>
                 <Link
                   href="/contact-us"
-                  className="cursor-pointer w-full bg-white text-[#00537B] py-2 rounded-full font-semibold hover:bg-gray-100 transition"
+                  className="cursor-pointer w-full text-center bg-white text-[#00537B] py-2 rounded-full font-semibold hover:bg-gray-100 transition"
                 >
                   Contact Us
                 </Link>
@@ -199,6 +201,12 @@ export default function Navbar() {
           animation: slideIn 0.3s ease forwards;
         }
       `}</style>
+
+      {/* Request Quote Form Modal */}
+   {/* Contact Form */}
+      {isFormOpen && (
+        <Popup isOpen={isFormOpen} onClose={() => setIsFormOpen(false)} />
+      )}
     </header>
   );
 }

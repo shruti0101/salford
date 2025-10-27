@@ -8,8 +8,8 @@ const tabs = [
   {
     id: 1,
     title: "Driving India’s Industrial Growth",
-    description: `Salford is dedicated to supporting India’s rapidly growing industrial landscape by ensuring reliable access to premium titanium dioxide (TiO₂). As a foreign trading partner, we understand the unique challenges and opportunities in the Indian market. Our goal is to provide businesses with a consistent supply of world-class TiO₂, helping them meet international standards, enhance product quality, and stay competitive in a dynamic economy.
-We focus on creating value for Indian industries through a combination of expertise, service, and reliability:`,
+    description: `Salford is dedicated to supporting India’s rapidly growing industrial landscape by ensuring reliable access to premium titanium dioxide (TiO₂). As a foreign trading partner, we understand the unique challenges and opportunities in the Global market. Our goal is to provide businesses with a consistent supply of world-class TiO₂, helping them meet international standards, enhance product quality, and stay competitive in a dynamic economy.
+We focus on creating value for Global industries through a combination of expertise, service, and reliability:`,
     points: [
       "Timely Deliveries – Efficient logistics and inventory management ensure clients receive materials when they need them.",
       "Tailored Solutions – Flexible grades, packaging, and volumes to match specific industry requirements.",
@@ -33,7 +33,7 @@ We focus on creating value for Indian industries through a combination of expert
   {
     id: 3,
     title: "Building Long-Term Partnerships",
-    description: `At Salford, our mission goes beyond supplying titanium dioxide (TiO₂); we aim to establish lasting partnerships with Indian industries. We believe that strong, long-term relationships are built on trust, reliability, and mutual growth. By working closely with our clients, we help them navigate market challenges, plan for the future, and maintain a consistent supply of high-quality TiO₂ for their operations.
+    description: `At Salford, our mission goes beyond supplying titanium dioxide (TiO₂); we aim to establish lasting partnerships with Global industries. We believe that strong, long-term relationships are built on trust, reliability, and mutual growth. By working closely with our clients, we help them navigate market challenges, plan for the future, and maintain a consistent supply of high-quality TiO₂ for their operations.
 We focus on fostering partnerships through several key initiatives:`,
     points: [
       "Collaborative Approach – Tailoring solutions to industry needs.",

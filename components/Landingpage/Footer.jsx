@@ -1,153 +1,139 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import {
-  Mail,
-  Phone,
-  MapPin,
-  Facebook,
-  Instagram,
-  Youtube,
-  Linkedin,
-  ChevronDown,
-} from "lucide-react";
 
 const products = [
-  { id: "tio2-anatase", name: "Titanium Dioxide – Anatase Grade" },
-  { id: "tio2-rutile", name: "Titanium Dioxide – Rutile Grade" },
- 
+  { name: "Titanium Dioxide - Plastics", link: "/products/tio2-for-plastics" },
+  { name: "Titanium Dioxide - Laminates", link: "/products/tio2-for-laminates" },
+  { name: "Titanium Dioxide - Coatings", link: "/products/tio2-for-coatings" },
 ];
 
 const Footer = () => {
-
-
   return (
     <footer
       style={{ backgroundImage: "url('/ff.avif')" }}
-      className="relative bg-cover bg-center text-gray-200 pt-16 pb-10 overflow-hidden"
+      className="relative bg-cover bg-center text-gray-300 pt-20 pb-10 overflow-hidden"
     >
-      {/* Premium Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-br from-[#000000]/90 via-[#0A0A0A]/85 to-[#1B1B1B]/90"></div>
-      <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#D33F00] via-[#F5B041] to-[#D33F00]"></div>
+      {/* --- Premium Overlay --- */}
+      <div className="absolute inset-0 bg-gradient-to-br from-[#0A0A0A]/95 via-[#121212]/90 to-[#1F1F1F]/95"></div>
+      <div className="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-[#F5B041] via-[#D33F00] to-[#F5B041] opacity-80"></div>
       <div className="absolute inset-0 bg-[url('/patterns/noise.png')] opacity-20 mix-blend-overlay"></div>
 
-      <div className="relative max-w-7xl mx-auto px-6 ">
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-6">
-          {/* Column 1: Logo + About */}
-          <div>
-            <Image
-              src="/about/logo.jpg"
-              alt="Salford Logo"
-              width={100}
-              height={60}
-              className="mb-6 rounded-sm brightness-110 drop-shadow-lg"
-            />
+      {/* --- Main Content --- */}
+      <div className="relative max-w-7xl mx-auto px-6 lg:px-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12">
 
-            <p className="text-sm leading-relaxed text-gray-300 mb-5">
-            Partner with a Global Leader Today If you are seeking a Titanium Dioxide Manufacturer in Germany with the credibility of a trusted titanium dioxide trader in all over world
+          {/* --- Logo & About --- */}
+          <div className="text-center sm:text-left">
+            <div className="flex justify-center sm:justify-start mb-6">
+              <div className="p-[2px] rounded-lg bg-gradient-to-tr from-[#F5B041] to-[#D33F00] inline-block">
+                <Image
+                  src="/about/logo.jpg"
+                  alt="Salford Logo"
+                  width={120}
+                  height={60}
+                  className="rounded-md brightness-110"
+                />
+              </div>
+            </div>
+            <p className="text-xs leading-relaxed text-white max-w-xs mx-auto sm:mx-0">
+              Partner with a Global Leader Today. As a Titanium Dioxide
+              Manufacturer in Germany and trusted global trader, Salford
+              delivers unmatched purity, brightness, and quality.
             </p>
-
-       
-
-         
           </div>
 
-          {/* Column 2: Quick Links */}
-          <div>
-            <h3 className="text-white font-semibold text-lg mb-4 border-b border-[#F5B041]/40 inline-block pb-1">
+          {/* --- Quick Links --- */}
+          <div className="text-center sm:text-left">
+            <h3 className="text-white font-semibold text-lg mb-5 tracking-wide relative inline-block after:content-[''] after:block after:h-[2px] after:w-12 after:bg-gradient-to-r from-[#F5B041] to-[#D33F00] after:mt-2">
               Quick Links
             </h3>
-            <ul className="space-y-2 text-md">
+            <ul className="space-y-3 text-[14px] text-white uppercase tracking-wide">
               {[
                 { name: "Home", href: "/" },
                 { name: "About Us", href: "/about-us" },
                 { name: "Products", href: "/products" },
                 { name: "Insights", href: "/blogs" },
-               
               ].map((item) => (
                 <li key={item.name}>
                   <Link
                     href={item.href}
-                    className="hover:text-[#F5B041] hover:translate-x-1 transition-transform duration-300 inline-block"
+                    className="relative group inline-block transition-all duration-300"
                   >
-                    {item.name}
+                    <span className="group-hover:text-[#F5B041]">{item.name}</span>
+                    <span className="absolute left-0 bottom-0 w-0 h-[1px] bg-gradient-to-r from-[#F5B041] to-[#D33F00] transition-all duration-300 group-hover:w-full"></span>
                   </Link>
                 </li>
               ))}
             </ul>
           </div>
 
-
-
-           <div>
-            <h3 className="text-white font-semibold text-lg mb-4 border-b border-[#F5B041]/40 inline-block pb-1">
-              Quick Links
+          {/* --- Explore More --- */}
+          <div className="text-center sm:text-left">
+            <h3 className="text-white font-semibold text-lg mb-5 tracking-wide relative inline-block after:content-[''] after:block after:h-[2px] after:w-12 after:bg-gradient-to-r from-[#F5B041] to-[#D33F00] after:mt-2">
+              Explore More
             </h3>
-            <ul className="space-y-2 text-md">
+            <ul className="space-y-3 text-[15px] text-white uppercase tracking-wide">
               {[
                 { name: "Industries", href: "/industries" },
                 { name: "Application", href: "/application" },
-                { name: "Contact-Us", href: "/contact-us" },
-               
-               
+                { name: "Contact Us", href: "/contact-us" },
               ].map((item) => (
                 <li key={item.name}>
                   <Link
                     href={item.href}
-                    className="hover:text-[#F5B041] hover:translate-x-1 transition-transform duration-300 inline-block"
+                    className="relative group inline-block transition-all duration-300"
                   >
-                    {item.name}
+                    <span className="group-hover:text-[#F5B041]">{item.name}</span>
+                    <span className="absolute left-0 bottom-0 w-0 h-[1px] bg-gradient-to-r from-[#F5B041] to-[#D33F00] transition-all duration-300 group-hover:w-full"></span>
                   </Link>
                 </li>
               ))}
             </ul>
           </div>
 
-          {/* Column 3: Products */}
-          <div>
-            <h3 className="text-white font-semibold text-lg mb-4 border-b border-[#F5B041]/40 inline-block pb-1">
+          {/* --- Products --- */}
+          <div className="text-center sm:text-left">
+            <h3 className="text-white font-semibold text-lg mb-5 tracking-wide relative inline-block after:content-[''] after:block after:h-[2px] after:w-12 after:bg-gradient-to-r from-[#F5B041] to-[#D33F00] after:mt-2">
               Our Products
             </h3>
-            <ul className="space-y-2 text-sm uppercase">
+            <ul className="space-y-3 text-[14px] text-white uppercase tracking-wide">
               {products.map((p) => (
-                <li key={p.id}>
+                <li key={p.name}>
                   <Link
-                    href="/products"
-                    className="hover:text-[#F5B041] hover:translate-x-1 transition-transform duration-300 inline-block"
+                    href={p.link}
+                    className="relative group inline-block transition-all duration-300"
                   >
-                    {p.name}
+                    <span className="group-hover:text-[#F5B041]">{p.name}</span>
+                    <span className="absolute left-0 bottom-0 w-0 h-[1px] bg-gradient-to-r from-[#F5B041] to-[#D33F00] transition-all duration-300 group-hover:w-full"></span>
                   </Link>
                 </li>
               ))}
             </ul>
           </div>
+        </div>
 
-          {/* Column 4: Trust Seal */}
-          <div>
-            <h3 className="text-[#F5B041] font-semibold text-lg mb-4">
-              Global Standards
-            </h3>
-            <div className="bg-white/5 backdrop-blur-sm rounded-lg p-4 border border-[#F5B041]/20 hover:border-[#F5B041]/40 transition-all duration-300">
-              <Image
-                src="/about/trustseal.png"
-                alt="Certification"
-                width={120}
-                height={120}
-                className="mx-auto rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
-              />
-            
-            </div>
-          </div>
+        {/* --- Divider --- */}
+        <div className="my-10 border-t border-white/10"></div>
+
+        {/* --- Bottom Bar --- */}
+        <div className="text-center text-xs sm:text-sm text-gray-400">
+          © {new Date().getFullYear()}{" "}
+          <span className="text-blue-400 font-medium tracking-wide">
+            Salford Trading Pvt. Ltd.
+          </span>{" "}
+          — Global Titanium Dioxide Supplier. All Rights Reserved.
+        </div>
+
+        <div className="text-center text-xs sm:text-sm text-gray-400 mt-2">
+          <p>Website Designed By Promozione Branding Pvt. Ltd. <a className="text-blue-400 underline" href="https://www.promozionebranding.com" target="_blank" rel="noopener noreferrer">Website Designing Company</a></p>
         </div>
       </div>
 
-      {/* Bottom Bar */}
-      <div className="border-t border-white/10 mt-10 pt-5 text-center text-xs text-gray-400 tracking-wide">
-        © 2025 <span className="text-[#F5B041] font-medium">Salford Trading Pvt. Ltd.</span> 
-        — Global Titanium Dioxide Supplier. All Rights Reserved.
-      </div>
+      {/* --- Floating Glow Accent --- */}
+      <div className="absolute -bottom-20 -right-20 w-[300px] h-[300px] bg-[#F5B041]/10 blur-3xl rounded-full"></div>
     </footer>
   );
 };

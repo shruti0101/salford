@@ -51,7 +51,7 @@ export const categories = [
           },
         ],
         pdfs: {
-          sds: "/sds.pdf",
+          sds: "/sds2.pdf",
           tds: "/products/201.pdf",
         },
       },
@@ -99,7 +99,7 @@ export const categories = [
           },
         ],
         pdfs: {
-          sds: "/sds.pdf",
+          sds: "/sds2.pdf",
           tds: "/products/250.pdf",
         },
       },
@@ -148,7 +148,7 @@ export const categories = [
           },
         ],
         pdfs: {
-          sds: "/sds.pdf",
+          sds: "/sds2.pdf",
           tds: "/products/280.pdf",
         },
       },
@@ -196,7 +196,7 @@ export const categories = [
           },
         ],
         pdfs: {
-          sds: "/sds.pdf",
+          sds: "/sds2.pdf",
           tds: "/products/260.pdf",
         },
       },
@@ -247,7 +247,7 @@ export const categories = [
           },
         ],
         pdfs: {
-          sds: "/sds.pdf",
+          sds: "/sds2.pdf",
           tds: "/products/269.pdf",
         },
       },
@@ -298,7 +298,7 @@ export const categories = [
           },
         ],
         pdfs: {
-          sds: "/sds.pdf",
+          sds: "/sds2.pdf",
           tds: "/products/288.pdf",
         },
       },
@@ -363,7 +363,7 @@ export const categories = [
           },
         ],
         pdfs: {
-          sds: "/sds.pdf",
+          sds: "/sds2.pdf",
           tds: "/products/626.pdf",
         },
       },

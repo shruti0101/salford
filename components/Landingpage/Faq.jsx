@@ -50,7 +50,7 @@ This ensures clients receive solutions perfectly aligned with their operational 
 • Strategic partnerships with international manufacturers.
 • Efficient customs clearance and logistics planning.
 • Flexible inventory and demand forecasting to prevent shortages.
-This reliability allows Indian businesses to plan production confidently without worrying about delays or inconsistent quality.`,
+This reliability allows Global businesses to plan production confidently without worrying about delays or inconsistent quality.`,
   },
   {
     question: "Does Salford provide technical and application support?",
@@ -58,7 +58,7 @@ This reliability allows Indian businesses to plan production confidently without
 • Advising on optimal grade selection for specific applications.
 • Providing technical guidance for formulation, mixing, and dispersion.
 • Sharing insights on best practices for storage, handling, and safe use.
-Our goal is to help Indian manufacturers maximize efficiency, reduce waste, and enhance product performance.`,
+Our goal is to help Global manufacturers maximize efficiency, reduce waste, and enhance product performance.`,
   },
   {
     question: "Is Salford’s titanium dioxide compliant with safety and environmental standards?",
@@ -69,7 +69,7 @@ Our goal is to help Indian manufacturers maximize efficiency, reduce waste, and 
 We prioritize eco-friendly sourcing and responsible trade, supporting sustainable industrial practices in all over world.`,
   },
   {
-    question: "How can Indian businesses request samples or place orders with Salford?",
+    question: "How can Global businesses request samples or place orders with Salford?",
     answer: `Clients can fill out the contact form or reach via email/phone. We provide:
 • Product samples to test quality and performance.
 • Quotations and pricing for specific grades and volumes.
@@ -77,13 +77,13 @@ We prioritize eco-friendly sourcing and responsible trade, supporting sustainabl
 Our team responds promptly to ensure a smooth, efficient ordering process.`,
   },
   {
-    question: "Why should Indian industries choose Salford as their TiO₂ partner?",
+    question: "Why should Global industries choose Salford as their TiO₂ partner?",
     answer: `Partnering with Salford means gaining access to:
 • Global-quality titanium dioxide with consistent performance.
 • Reliable supply chains ensuring uninterrupted operations.
 • Technical support and guidance to optimize product applications.
 • Long-term strategic partnership focused on growth, sustainability, and innovation.
-We help Indian businesses stay competitive, improve product quality, and achieve operational excellence.`,
+We help Global businesses stay competitive, improve product quality, and achieve operational excellence.`,
   },
 ];
 
@@ -108,8 +108,8 @@ export default function PremiumFAQ() {
 
       {/* Heading */}
       <div className="max-w-5xl mx-auto text-center mb-16 relative z-10">
-        <h2 className="text-4xl md:text-5xl font-extrabold text-black tracking-tight">
-          Frequently Asked <span className="text-[#F7C600]">Questions</span>
+        <h2 className="text-3xl md:text-4xl font-extrabold text-black tracking-tight">
+          Frequently Asked Questions
         </h2>
         <p className="text-black mt-4 text-lg">
           Everything you need to know about Salford's Titanium Dioxide products

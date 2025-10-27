@@ -4,9 +4,9 @@ import Link from 'next/link';
 
 const HomeNav = () => {
   const cards = [
-    { title: "TiO₂ for Coatings", icon: <FaPaintRoller className="w-10 h-10" />,link:"/" },
-    { title: "TiO₂ for Plastics", icon: <FaCube className="w-10 h-10" /> ,link:"/"},
-    { title: "TiO₂ for Laminates", icon: <FaBook className="w-10 h-10"/> ,link:"/" },
+    { title: "TiO₂ for Coatings", icon: <FaPaintRoller className="w-10 h-10" />,link:"/tio2-for-coatings" },
+    { title: "TiO₂ for Plastics", icon: <FaCube className="w-10 h-10" /> ,link:"/tio2-for-plastics"},
+    { title: "TiO₂ for Laminates", icon: <FaBook className="w-10 h-10"/> ,link:"/tio2-for-laminates" },
   ];
 
   return (

@@ -143,11 +143,11 @@ const innovationPoints = [
         {/* Overlay Gradient */}
 
         {/* Content */}
-        <div className="relative z-10 text-white">
-          <h1 className="text-5xl font-serif text-white md:text-6xl font-extrabold tracking-tight drop-shadow-lg">
+        <div className="relative z-10 text-white ">
+          <h1 className="text-2xl font-serif text-white md:text-6xl font-extrabold tracking-tight drop-shadow-lg mt-20">
             About Us
           </h1>
-          <p className="text-white mt-4 max-w-2xl text-sm md:text-lg leading-relaxed">
+          <p className="text-white mt-4 md:max-w-2xl text-xs md:text-lg md:leading-relaxed">
             Partner with a Global Leader Today If you are seeking a Titanium
             Dioxide Manufacturer in Germany with the credibility of a trusted
             titanium dioxide trader in all over world, Salford is your ideal partner.
@@ -160,8 +160,8 @@ const innovationPoints = [
         </div>
       </div>
 
-      <section className="bg-gradient-to-r from-[#E4E7EF] to-[#E4E7EF] py-20 px-6 md:px-16 lg:px-24">
-        <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+      <section className="bg-gradient-to-r from-[#E4E7EF] to-[#E4E7EF] py-4 md:py-20 px-6 md:px-16 lg:px-24">
+        <div className="max-w-7xl mx-auto grid md:grid-cols-2 md:gap-12 items-center">
           {/* Right Image */}
           <div className="relative w-full h-[400px] md:h-[500px] rounded-md  overflow-hidden ">
             <Image

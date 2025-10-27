@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
+import CTA from "@/components/Landingpage/Cta";
 
 const industries = [
   { image: "/industry/1.jpg", name: "Agriculture" },
@@ -14,7 +15,7 @@ const industries = [
 
 export default function IndustriesSection() {
   return (
-    <section className="py-45 bg-gradient-to-b from-white to-blue-50">
+    <section className="mt-35 py-10 bg-gradient-to-b from-white to-blue-50">
       <div className="max-w-7xl mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-16">
@@ -27,7 +28,7 @@ export default function IndustriesSection() {
         </div>
 
         {/* Grid Layout */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mb-8">
           {industries.map((industry, index) => (
             <div
               key={index}
@@ -55,6 +56,8 @@ export default function IndustriesSection() {
           ))}
         </div>
       </div>
+
+      <CTA></CTA>
     </section>
   );
 }

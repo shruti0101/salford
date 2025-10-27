@@ -7,18 +7,18 @@ const Page = () => {
     <div>
       {/* ===== Banner Section ===== */}
       <div
-        className="relative w-full px-6 bg-cover bg-center h-[50vh] md:h-[90vh] flex flex-col items-start justify-center overflow-hidden"
+        className="relative w-full px-8 bg-cover bg-center h-[50vh] md:h-[90vh] flex flex-col items-start justify-center overflow-hidden"
         style={{
           backgroundImage: "url('/whychoosebg.png')",
         }}
       >
-        <div className="absolute inset-0 bg-black/40"></div>
+        <div className="absolute inset-0 bg-black/30"></div>
 
-        <div className="relative z-10 text-white max-w-4xl">
-          <h1 className="text-5xl md:text-6xl font-extrabold tracking-tight drop-shadow-lg">
+        <div className="relative mt-20 z-10 text-white max-w-4xl">
+          <h1 className="text-3xl md:text-5xl font-extrabold tracking-tight drop-shadow-lg">
             Contact Us
           </h1>
-          <p className="mt-4 text-sm md:text-2xl leading-relaxed">
+          <p className="mt-4 max-w-2xl text-sm md:text-xl leading-relaxed">
             Together, let’s build a sustainable, brighter future for Indian
             industry — powered by world-class titanium dioxide and the trusted
             partnership of Salford.

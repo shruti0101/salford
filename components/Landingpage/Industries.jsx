@@ -15,41 +15,51 @@ const industries = [
 
 export default function IndustriesSection() {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [visibleCount, setVisibleCount] = useState(2); // default desktop value
+  const [visibleCount, setVisibleCount] = useState(2); // default for desktop
 
-  // Handle responsiveness safely on the client
+  // ✅ Only change visible count on mobile
   useEffect(() => {
     const updateVisibleCount = () => {
       if (window.innerWidth < 640) setVisibleCount(1);
-      else if (window.innerWidth < 1024) setVisibleCount(2);
-      else setVisibleCount(2);
+      else setVisibleCount(2); // desktop & tablet untouched
     };
-
-    updateVisibleCount(); // Run once on mount
+    updateVisibleCount();
     window.addEventListener("resize", updateVisibleCount);
     return () => window.removeEventListener("resize", updateVisibleCount);
   }, []);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIndex((prev) =>
-        prev + visibleCount >= industries.length ? 0 : prev + visibleCount
-      );
-    }, 4000);
-    return () => clearInterval(interval);
-  }, [visibleCount]);
+useEffect(() => {
+  const interval = setInterval(() => {
+    setCurrentIndex((prev) => {
+      // Move forward only if we haven't reached the second slide yet
+      if (prev + visibleCount < visibleCount * 2) {
+        return prev + visibleCount;
+      } else {
+        // Stop after two slides
+        clearInterval(interval);
+        return prev;
+      }
+    });
+  }, 4000);
+  return () => clearInterval(interval);
+}, [visibleCount]);
 
-  const handlePrev = () => {
-    setCurrentIndex((prev) =>
-      prev === 0 ? industries.length - visibleCount : prev - visibleCount
-    );
-  };
 
-  const handleNext = () => {
-    setCurrentIndex((prev) =>
-      prev + visibleCount >= industries.length ? 0 : prev + visibleCount
-    );
-  };
+const handlePrev = () => {
+  setCurrentIndex((prev) => (prev - visibleCount < 0 ? 0 : prev - visibleCount));
+};
+
+
+ const handleNext = () => {
+  setCurrentIndex((prev) => {
+    if (prev + visibleCount >= visibleCount * 2) return prev; // stop at second slide
+    return prev + visibleCount;
+  });
+};
+
+
+  // ✅ Calculate translation properly based on visibleCount
+  const translateX = (currentIndex * (100 / visibleCount)) / industries.length;
 
   return (
     <section className="relative bg-blue-400/10 py-20 overflow-hidden">
@@ -61,8 +71,7 @@ export default function IndustriesSection() {
               Industries We Serve
             </h2>
             <p className="text-black mt-2 text-base sm:text-lg max-w-lg">
-              Delivering reliable solutions across diverse industries with
-              unmatched quality and expertise.
+              Delivering reliable solutions across diverse industries with unmatched quality and expertise.
             </p>
           </div>
 
@@ -88,15 +97,17 @@ export default function IndustriesSection() {
           <div
             className="flex transition-transform duration-700 ease-[cubic-bezier(0.7,0,0.3,1)]"
             style={{
-              transform: `translateX(-${
-                (currentIndex / industries.length) * 100
-              }%)`,
+              transform: `translateX(-${currentIndex * (100 / visibleCount)}%)`,
             }}
           >
             {industries.map((item, index) => (
               <div
                 key={index}
-                className="relative w-[90%] sm:w-1/2 md:w-1/4 h-56 sm:h-64 md:h-72 flex-shrink-0 group overflow-hidden rounded-xl mx-auto sm:mx-1"
+                className={`relative ${
+                  visibleCount === 1
+                    ? "w-full" // ✅ Mobile: show 1 at a time
+                    : "w-[90%] sm:w-1/2 md:w-1/4"
+                } h-56 sm:h-64 md:h-72 flex-shrink-0 group overflow-hidden rounded-xl mx-auto sm:mx-1`}
               >
                 <Image
                   src={item.image}
@@ -105,7 +116,7 @@ export default function IndustriesSection() {
                   className="object-cover transform transition-transform duration-700 group-hover:scale-110"
                 />
 
-                {/* Sliding Overlay */}
+                {/* Overlay */}
                 <div className="absolute inset-0 bg-gradient-to-b from-[#03a9f4]/90 via-[#007bbd]/80 to-[#012b4a]/90 translate-y-[-100%] group-hover:translate-y-0 transition-transform duration-700 ease-in-out flex items-center justify-center">
                   <h3 className="text-white text-base sm:text-lg md:text-xl font-semibold tracking-wide uppercase text-center px-3">
                     {item.name}

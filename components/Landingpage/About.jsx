@@ -1,47 +1,9 @@
-import {
-  FaGlobeAmericas,
-  FaHandshake,
-  FaCertificate,
-  FaTruckMoving,
-  FaCogs,
-  FaLightbulb,
-} from "react-icons/fa";
+
 import Image from "next/image";
-import Ti from "@/components/Animations/Ti";
+import Link from "next/link";
 
 export default function AboutUs() {
- const features = [
-  {
-    icon: <FaGlobeAmericas className="w-6 h-6 text-[#00537B]" />,
-    title: "Global Expertise",
-    desc: "Extensive international trade experience ensures access to top-grade titanium dioxide.",
-  },
-  {
-    icon: <FaHandshake className="w-6 h-6 text-[#00537B]" />,
-    title: "Trusted Network",
-    desc: "Long-standing relationships with manufacturers across Europe, Asia, and the Middle East.",
-  },
-  {
-    icon: <FaCertificate className="w-6 h-6 text-[#00537B]" />,
-    title: "Commitment to Quality",
-    desc: "Strict quality control measures guarantee products that meet global standards.",
-  },
-  {
-    icon: <FaTruckMoving className="w-6 h-6 text-[#00537B]" />,
-    title: "Reliability",
-    desc: "Consistent supply chain management minimizes disruptions for clients in  all over world.",
-  },
-  {
-    icon: <FaCogs className="w-6 h-6 text-[#00537B]" />,
-    title: "Tailored Solutions",
-    desc: "Flexible supply options designed to meet specific client requirements.",
-  },
-  {
-    icon: <FaLightbulb className="w-6 h-6 text-[#00537B]" />,
-    title: "Collaborative Support",
-    desc: "Guidance on TiO₂ applications, technical insights, and industry trends.",
-  },
-];
+
 
   return (
   <section
@@ -76,7 +38,7 @@ export default function AboutUs() {
       <p className="text-lg text-black leading-relaxed mb-4">
         <strong>Salford</strong> is a distinguished international supplier
         and trader of <strong>Titanium Dioxide (TiO₂),</strong> dedicated to
-        supporting India’s fast-growing industrial landscape. We connect
+        supporting world's fast-growing industrial landscape. We connect
         Indian businesses with world-class titanium dioxide manufacturers
         abroad, providing consistent, high-performance raw materials.
       </p>
@@ -102,10 +64,10 @@ export default function AboutUs() {
 
       {/* Actions */}
       <div className="flex flex-nowrap items-center gap-3">
-        <button className="relative px-7 py-3 rounded-full  text-lg font-semibold bg-gradient-to-r from-[#8AB0C2] to-[#0082C8] text-black shadow-lg overflow-hidden group hover:scale-105 transition-transform duration-300">
+        <Link href="/about-us" className="relative px-7 py-3 rounded-full  text-lg font-semibold bg-gradient-to-r from-[#8AB0C2] to-[#0082C8] text-black shadow-lg overflow-hidden group hover:scale-105 transition-transform duration-300">
           <span className="absolute inset-0 bg-white opacity-10 -translate-x-full group-hover:translate-x-0 transform transition-transform duration-500"></span>
           Know More
-        </button>
+        </Link>
       </div>
     </div>
   </div>
