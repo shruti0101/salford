@@ -1,10 +1,19 @@
 "use client";
-import React, { useState, useEffect } from "react";
-import Image from "next/image";
-import { ChevronLeft, ChevronRight } from "lucide-react";
 
+import { useEffect } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Autoplay } from "swiper/modules";
+import Link from "next/link";
+import { FaChevronUp } from "react-icons/fa";
+
+import "swiper/css";
+import "swiper/css/navigation";
+
+
+
+/* Carousel data */
 const industries = [
-  { image: "/industry/1.jpg", name: "Agriculture" },
+  { image: "/industry/1.jpg", name: "Agriculture"  },
   { image: "/industry/3.jpeg", name: "Oil & Gas Industry" },
   { image: "/industry/4.png", name: "Plastics & Polymers" },
   { image: "/industry/5.jpg", name: "Building And Homes" },
@@ -13,126 +22,79 @@ const industries = [
   { image: "/industry/7.jpg", name: "Footwear & Apparel" },
 ];
 
-export default function IndustriesSection() {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [visibleCount, setVisibleCount] = useState(2); // default for desktop
+const ServicesCarousel = () => {
 
-  // ✅ Only change visible count on mobile
-  useEffect(() => {
-    const updateVisibleCount = () => {
-      if (window.innerWidth < 640) setVisibleCount(1);
-      else setVisibleCount(2); // desktop & tablet untouched
-    };
-    updateVisibleCount();
-    window.addEventListener("resize", updateVisibleCount);
-    return () => window.removeEventListener("resize", updateVisibleCount);
-  }, []);
-
-useEffect(() => {
-  const interval = setInterval(() => {
-    setCurrentIndex((prev) => {
-      // Move forward only if we haven't reached the second slide yet
-      if (prev + visibleCount < visibleCount * 2) {
-        return prev + visibleCount;
-      } else {
-        // Stop after two slides
-        clearInterval(interval);
-        return prev;
-      }
-    });
-  }, 4000);
-  return () => clearInterval(interval);
-}, [visibleCount]);
-
-
-const handlePrev = () => {
-  setCurrentIndex((prev) => (prev - visibleCount < 0 ? 0 : prev - visibleCount));
-};
-
-
- const handleNext = () => {
-  setCurrentIndex((prev) => {
-    if (prev + visibleCount >= visibleCount * 2) return prev; // stop at second slide
-    return prev + visibleCount;
-  });
-};
-
-
-  // ✅ Calculate translation properly based on visibleCount
-  const translateX = (currentIndex * (100 / visibleCount)) / industries.length;
 
   return (
-    <section className="relative bg-blue-400/10 py-20 overflow-hidden">
-      <div className="relative w-full mx-auto px-4 sm:px-6">
-        {/* HEADER */}
-        <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
-          <div>
-            <h2 className="text-3xl sm:text-4xl md:text-6xl mb-3 font-extrabold text-black tracking-tight leading-snug">
-              Industries We Serve
-            </h2>
-            <p className="text-black mt-2 text-base sm:text-lg max-w-lg">
+    <section className="py-3 mb-15 bg-gradient-to-br from-white to-blue-50">
+      {/* Heading */}
+      <div
+        className="text-center max-w-3xl mx-auto mb-16 px-4"
+        data-aos="fade-up"
+      >
+        <div className="flex items-center justify-center">
+          <div className="w-10 h-1 bg-sky-500 mr-3 rounded-full" />
+          <h3 className="text-sky-600 font-bold uppercase tracking-[0.15em] text-sm sm:text-base">
+            Our Services
+          </h3>
+          <div className="w-10 h-1 bg-sky-500 ml-3 rounded-full" />
+        </div>
+
+        <h2 className="relative inline-block font-bold text-[#1E2939] text-3xl sm:text-3xl md:text-5xl leading-snug group">
+         Industries We Serve
+          <br />
+      
+        </h2>
+         <p className="text-black mx-auto mt-2 text-base sm:text-lg max-w-lg">
               Delivering reliable solutions across diverse industries with unmatched quality and expertise.
             </p>
-          </div>
+      </div>
 
-          {/* Navigation Buttons */}
-          <div className="flex gap-3 self-start md:self-auto">
-            <button
-              onClick={handlePrev}
-              className="p-2 sm:p-3 rounded-full bg-black border border-black text-white hover:bg-black hover:scale-110 transition-all duration-300"
-            >
-              <ChevronLeft size={20} className="sm:w-6 sm:h-6" />
-            </button>
-            <button
-              onClick={handleNext}
-              className="p-2 sm:p-3 rounded-full bg-black border border-black text-white hover:bg-black hover:scale-110 transition-all duration-300"
-            >
-              <ChevronRight size={20} className="sm:w-6 sm:h-6" />
-            </button>
-          </div>
-        </div>
-
-        {/* SLIDER */}
-        <div className="relative mt-10 overflow-hidden px-2 sm:px-9">
-          <div
-            className="flex transition-transform duration-700 ease-[cubic-bezier(0.7,0,0.3,1)]"
-            style={{
-              transform: `translateX(-${currentIndex * (100 / visibleCount)}%)`,
-            }}
-          >
-            {industries.map((item, index) => (
-              <div
-                key={index}
-                className={`relative ${
-                  visibleCount === 1
-                    ? "w-full" // ✅ Mobile: show 1 at a time
-                    : "w-[90%] sm:w-1/2 md:w-1/4"
-                } h-56 sm:h-64 md:h-72 flex-shrink-0 group overflow-hidden rounded-xl mx-auto sm:mx-1`}
-              >
-                <Image
-                  src={item.image}
-                  alt={item.name}
-                  fill
-                  className="object-cover transform transition-transform duration-700 group-hover:scale-110"
-                />
-
-                {/* Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-b from-[#03a9f4]/90 via-[#007bbd]/80 to-[#012b4a]/90 translate-y-[-100%] group-hover:translate-y-0 transition-transform duration-700 ease-in-out flex items-center justify-center">
-                  <h3 className="text-white text-base sm:text-lg md:text-xl font-semibold tracking-wide uppercase text-center px-3">
-                    {item.name}
-                  </h3>
+      {/* Carousel */}
+      <div className="md:max-w-7xl mx-auto ">
+        <Swiper
+          modules={[Navigation, Autoplay]}
+          navigation
+          autoplay={{ delay: 4000 }}
+          loop
+          spaceBetween={20}
+          breakpoints={{
+            0: { slidesPerView: 1 },
+            640: { slidesPerView: 1.2 },
+            768: { slidesPerView: 2 },
+            1024: { slidesPerView: 3 },
+          }}
+        >
+          {industries.map((service, index) => (
+            <SwiperSlide key={index}>
+              {/* Make each card clickable */}
+              <div >
+                <div className="relative h-[420px] sm:h-[440px] md:h-[460px] w-full max-w-sm mx-auto rounded-xl overflow-hidden shadow-xl group ">
+                  {/* Background image */}
+                  <div
+                    className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
+                    style={{ backgroundImage: `url(${service.image})` }}
+                  />
+                  {/* Overlay */}
+                  <div className="absolute inset-0 bg-black/10 z-10 transition-opacity duration-300 group-hover:bg-black/20" />
+                  <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-[#1869C1] via-[#7DAADA]/30 to-transparent opacity-90 group-hover:h-full transition-all duration-500 z-20" />
+                  {/* Title */}
+                  <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 z-30 text-white text-center transition-all duration-500 group-hover:bottom-18">
+                    <h3 className="text-3xl font-extrabold tracking-wide drop-shadow-md">
+                      {service.name}
+                    </h3>
+                  </div>
+              
+                  {/* Glow Border */}
+                  <div className="absolute inset-0 rounded-xl border border-white/20 group-hover:border-blue-400 transition-all duration-500 z-50 pointer-events-none" />
                 </div>
-
-                {/* Subtle bottom shadow */}
-                <div className="absolute bottom-0 left-0 w-full h-16 bg-gradient-to-t from-black/50 to-transparent"></div>
-
-                {/* Glow border */}
-                <div className="absolute inset-0 border border-white/10 rounded-xl group-hover:border-[#00e5ff]/40 transition-all duration-500"></div>
               </div>
-            ))}
-          </div>
-        </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
     </section>
   );
-}
+};
+
+export default ServicesCarousel;

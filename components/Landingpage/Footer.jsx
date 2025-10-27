@@ -6,7 +6,10 @@ import Link from "next/link";
 
 const products = [
   { name: "Titanium Dioxide - Plastics", link: "/products/tio2-for-plastics" },
-  { name: "Titanium Dioxide - Laminates", link: "/products/tio2-for-laminates" },
+  {
+    name: "Titanium Dioxide - Laminates",
+    link: "/products/tio2-for-laminates",
+  },
   { name: "Titanium Dioxide - Coatings", link: "/products/tio2-for-coatings" },
 ];
 
@@ -24,10 +27,9 @@ const Footer = () => {
       {/* --- Main Content --- */}
       <div className="relative max-w-7xl mx-auto px-6 lg:px-10">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12">
-
           {/* --- Logo & About --- */}
-          <div className="text-center sm:text-left">
-            <div className="flex justify-center sm:justify-start mb-6">
+          <div className="">
+            <div className=" mb-6">
               <div className="p-[2px] rounded-lg bg-gradient-to-tr from-[#F5B041] to-[#D33F00] inline-block">
                 <Image
                   src="/about/logo.jpg"
@@ -38,7 +40,7 @@ const Footer = () => {
                 />
               </div>
             </div>
-            <p className="text-xs leading-relaxed text-white max-w-xs mx-auto sm:mx-0">
+            <p className="text-sm leading-relaxed text-white max-w-xs  sm:mx-0">
               Partner with a Global Leader Today. As a Titanium Dioxide
               Manufacturer in Germany and trusted global trader, Salford
               delivers unmatched purity, brightness, and quality.
@@ -46,8 +48,8 @@ const Footer = () => {
           </div>
 
           {/* --- Quick Links --- */}
-          <div className="text-center sm:text-left">
-            <h3 className="text-white font-semibold text-lg mb-5 tracking-wide relative inline-block after:content-[''] after:block after:h-[2px] after:w-12 after:bg-gradient-to-r from-[#F5B041] to-[#D33F00] after:mt-2">
+          <div className=" ">
+            <h3 className="text-white font-semibold text-lg mb-2 tracking-wide relative inline-block after:content-[''] after:block after:h-[2px] after:w-12 after:bg-gradient-to-r from-[#F5B041] to-[#D33F00] after:mt-2">
               Quick Links
             </h3>
             <ul className="space-y-3 text-[14px] text-white uppercase tracking-wide">
@@ -62,7 +64,9 @@ const Footer = () => {
                     href={item.href}
                     className="relative group inline-block transition-all duration-300"
                   >
-                    <span className="group-hover:text-[#F5B041]">{item.name}</span>
+                    <span className="group-hover:text-[#F5B041]">
+                      {item.name}
+                    </span>
                     <span className="absolute left-0 bottom-0 w-0 h-[1px] bg-gradient-to-r from-[#F5B041] to-[#D33F00] transition-all duration-300 group-hover:w-full"></span>
                   </Link>
                 </li>
@@ -71,8 +75,8 @@ const Footer = () => {
           </div>
 
           {/* --- Explore More --- */}
-          <div className="text-center sm:text-left">
-            <h3 className="text-white font-semibold text-lg mb-5 tracking-wide relative inline-block after:content-[''] after:block after:h-[2px] after:w-12 after:bg-gradient-to-r from-[#F5B041] to-[#D33F00] after:mt-2">
+          <div className="">
+            <h3 className="text-white font-semibold text-lg mb-2 tracking-wide relative inline-block after:content-[''] after:block after:h-[2px] after:w-12 after:bg-gradient-to-r from-[#F5B041] to-[#D33F00] after:mt-2">
               Explore More
             </h3>
             <ul className="space-y-3 text-[15px] text-white uppercase tracking-wide">
@@ -86,7 +90,9 @@ const Footer = () => {
                     href={item.href}
                     className="relative group inline-block transition-all duration-300"
                   >
-                    <span className="group-hover:text-[#F5B041]">{item.name}</span>
+                    <span className="group-hover:text-[#F5B041]">
+                      {item.name}
+                    </span>
                     <span className="absolute left-0 bottom-0 w-0 h-[1px] bg-gradient-to-r from-[#F5B041] to-[#D33F00] transition-all duration-300 group-hover:w-full"></span>
                   </Link>
                 </li>
@@ -95,8 +101,8 @@ const Footer = () => {
           </div>
 
           {/* --- Products --- */}
-          <div className="text-center sm:text-left">
-            <h3 className="text-white font-semibold text-lg mb-5 tracking-wide relative inline-block after:content-[''] after:block after:h-[2px] after:w-12 after:bg-gradient-to-r from-[#F5B041] to-[#D33F00] after:mt-2">
+          <div className="">
+            <h3 className="text-white font-semibold text-lg mb-2 tracking-wide relative inline-block after:content-[''] after:block after:h-[2px] after:w-12 after:bg-gradient-to-r from-[#F5B041] to-[#D33F00] after:mt-2">
               Our Products
             </h3>
             <ul className="space-y-3 text-[14px] text-white uppercase tracking-wide">
@@ -116,10 +122,10 @@ const Footer = () => {
         </div>
 
         {/* --- Divider --- */}
-        <div className="my-10 border-t border-white/10"></div>
+        <div className="my-8 border-t border-white/10"></div>
 
         {/* --- Bottom Bar --- */}
-        <div className="text-center text-xs sm:text-sm text-gray-400">
+        <div className="text-center text-xs sm:text-sm text-white">
           © {new Date().getFullYear()}{" "}
           <span className="text-blue-400 font-medium tracking-wide">
             Salford.
@@ -127,8 +133,18 @@ const Footer = () => {
           — Global Titanium Dioxide Manufacturer. All Rights Reserved.
         </div>
 
-        <div className="text-center text-xs sm:text-sm text-gray-400 mt-2">
-          <p>Website Designed By Promozione Branding Pvt. Ltd. <a className="text-blue-400 underline" href="https://www.promozionebranding.com" target="_blank" rel="noopener noreferrer">Website Designing Company</a></p>
+        <div className="text-center text-xs sm:text-sm text-white mt-2">
+          <p>
+            Website Designed By Promozione Branding Pvt. Ltd.{" "}
+            <a
+              className="text-blue-400 underline"
+              href="https://www.promozionebranding.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Website Designing Company
+            </a>
+          </p>
         </div>
       </div>
 

@@ -145,10 +145,10 @@ export default function PremiumFAQ() {
                   animate={{ height: "auto", opacity: 1 }}
                   exit={{ height: 0, opacity: 0 }}
                   transition={{ duration: 0.5 }}
-                  className="px-6 pb-6 text-black text-lg leading-relaxed"
+                  className="px-6 pb-6 text-black text-md leading-relaxed"
                 >
                   {faq.answer.split("\n").map((line, i) => (
-                    <p key={i} className="mb-2">
+                    <p key={i} className="mb-2 text-md">
                       {line}
                     </p>
                   ))}
