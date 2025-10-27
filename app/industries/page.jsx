@@ -5,7 +5,7 @@ import CTA from "@/components/Landingpage/Cta";
 
 const industries = [
   { image: "/industry/1.jpg", name: "Agriculture" },
-  { image: "/industry/3.jpeg", name: "Oil & Gas Industry" },
+  // { image: "/industry/3.jpeg", name: "Oil & Gas Industry" },
   { image: "/industry/4.png", name: "Plastics & Polymers" },
   { image: "/industry/5.jpg", name: "Building And Homes" },
   { image: "/industry/8.jpeg", name: "Laminates" },
@@ -15,7 +15,22 @@ const industries = [
 
 export default function IndustriesSection() {
   return (
-    <section className="mt-35 py-10 bg-gradient-to-b from-white to-blue-50">
+    <>
+
+       <div
+        className="relative w-full px-8 bg-cover bg-center h-[50vh] md:h-[90vh] flex flex-col items-start justify-center overflow-hidden"
+        style={{
+          backgroundImage: "url('/industries.webp')",
+        }}
+      >
+     
+
+     
+      </div>
+    
+    <section className="mt-8 py-10 bg-gradient-to-b from-white to-blue-50">
+
+
       <div className="max-w-7xl mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-16">
@@ -28,7 +43,8 @@ export default function IndustriesSection() {
         </div>
 
         {/* Grid Layout */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mb-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2
+         gap-8 mb-8">
           {industries.map((industry, index) => (
             <div
               key={index}
@@ -59,5 +75,8 @@ export default function IndustriesSection() {
 
       <CTA></CTA>
     </section>
+    </>
+
+
   );
 }

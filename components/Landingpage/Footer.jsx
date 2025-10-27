@@ -122,9 +122,9 @@ const Footer = () => {
         <div className="text-center text-xs sm:text-sm text-gray-400">
           © {new Date().getFullYear()}{" "}
           <span className="text-blue-400 font-medium tracking-wide">
-            Salford Trading Pvt. Ltd.
+            Salford.
           </span>{" "}
-          — Global Titanium Dioxide Supplier. All Rights Reserved.
+          — Global Titanium Dioxide Manufacturer. All Rights Reserved.
         </div>
 
         <div className="text-center text-xs sm:text-sm text-gray-400 mt-2">

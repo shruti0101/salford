@@ -86,7 +86,7 @@ export default function ProductsPage() {
 
 Salford’s titanium dioxide grades are engineered to deliver smooth runnability, uniform opacity, and outstanding retention during paper or foil processing. With reduced reel-to-reel variation, they help minimize downtime and ensure flawless printing consistency.
 
-Salford R-796+ is specifically designed for laminate applications, providing high opacity and color retention. Its surface treatment ensures compatibility with diverse water chemistries, enabling wide versatility in high- and low-pressure décor papers and furniture laminates.
+It is specifically designed for laminate applications, providing high opacity and color retention. Its surface treatment ensures compatibility with diverse water chemistries, enabling wide versatility in high- and low-pressure décor papers and furniture laminates.
 
 TiO₂ not only improves visual brightness but also enhances color stability, preventing discoloration from UV exposure. By ensuring even dispersion and stronger paper strength, Salford’s TiO₂ grades enable manufacturers to achieve uniformity, reduce waste, and improve yield—creating decorative surfaces that are both durable and visually appealing.`,
         laminatesProducts

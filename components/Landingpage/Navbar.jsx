@@ -22,7 +22,7 @@ export default function Navbar() {
       ],
     },
     { label: "Industries", link: "/industries" },
-    { label: "Application", link: "/application" },
+    { label: "Applications", link: "/applications" },
     { label: "News & Events", link: "/news-events" },
   ];
 
