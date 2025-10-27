@@ -135,7 +135,7 @@ const innovationPoints = [
     <>
       {/* ===== Banner Section ===== */}
       <div
-        className="relative w-full px-15 bg-cover bg-center h-[50vh] md:h-[100vh] flex flex-col items-start justify-center overflow-hidden"
+        className="relative w-full px-5 md:px-15 bg-cover bg-center h-[50vh] md:h-[100vh] flex flex-col items-start justify-center overflow-hidden"
         style={{
           backgroundImage: "url('/about/Chemicals.webp')",
         }}
@@ -377,7 +377,7 @@ const innovationPoints = [
           {/* --------------------------------------------- */}
           {/* 2️⃣ Vision & Mission */}
           {/* --------------------------------------------- */}
-          <section className="py-16 rounded-3xl shadow-inner">
+          <section className="md:py-16 rounded-3xl shadow-inner">
             <div className="max-w-5xl mx-auto text-center px-6">
               <h2 className="text-4xl font-extrabold text-[#1B5AA2] mb-10">
                 Our Vision and Mission
