@@ -105,14 +105,7 @@ export default function ContactForm({ isOpen, onClose }) {
 
             {/* Phone */}
             <div className="flex items-center gap-2 bg-white/10 border border-white/30 rounded-lg px-4 py-3 focus-within:ring-2 focus-within:ring-[#00C9FF] transition">
-              <Image
-                src="/flag.webp"
-                alt="India Flag"
-                width={20}
-                height={15}
-                className=""
-              />
-              <span className="text-white text-sm">+91</span>
+           
               <input
                 type="tel"
                 maxLength={10}

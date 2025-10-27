@@ -364,62 +364,60 @@ export const categories = [
   {
     id: "laminates",
     name: "TiO2 for Laminates",
-    metaTitle: "SALFORD 626",
-    metaDescription: "SALFORD 626",
+    metaTitle: "SALFORD 296+",
+    metaDescription: "SALFORD 296+",
 
     products: [
       {
-        id: "salford-626",
-        name: "SALFORD 626",
-        metaTitle: "SALFORD 626",
-        metaDescription: "SALFORD 626",
-        banner: "/products/626.jpg",
+        id: "salford-296",
+        name: "SALFORD 296+",
+        metaTitle: "SALFORD 296+",
+        metaDescription: "SALFORD 296+",
+        banner: "/products/296+.jpg",
         excerpt: [
           {
             type: "p",
-            text: "SALFORD 626 is a chloride-process rutile titanium dioxide pigment with a neutral tint, designed for high outdoor durability, excellent brightness, and superior opacity, ideal for PVC, engineering plastics, and masterbatch applications.",
+            text: "SALFORD 296+ is a versatile, high brightness rutile pigment manufacturedusing the chloride process.",
           },
         ],
 
         description: [
-          { type: "h2", text: "SALFORD 626" },
+          { type: "h2", text: "SALFORD 296+" },
           {
             type: "p",
-            text: "SALFORD 626 is a multi-purpose, Neutral tint tone, chloride-process, rutile titanium dioxide pigment, designed for plastics requiring high outdoor durability and excellent optical properties",
+            text: "SALFORD 296+ is a versatile, high brightness rutile pigment manufacturedusing the chloride process. SALFORD 296+ provides excellent opacity andretention and is suitable for use in high and low pressure décor papers, decorative foils, and print-base applications.",
           },
-          { type: "h2", text: "Key Features – SALFORD 626" },
+          { type: "h2", text: "Key Features – SALFORD 296+" },
 
           {
             type: "ul",
             items: [
-              "Lends colored systems a neutral tone",
-              "Is readily wetted and dispersed",
-              "Imparts very high brightness and a neutral tone",
-              "Delivers high tinting strength and opacity",
-              "Increases the durability of plastics used outdoors",
+              "Good opacity and hiding power",
+              "Light stability and color retention",
+              "Optimal titanium dioxide (TiO₂) efficiency",
+              "Bluish-white, high brightness with excellent hiding that results in even color and formation",
+            
             ],
           },
 
           {
             type: "h2",
-            text: "Application - SALFORD 626 is recommended for evaluation in:",
+            text: "Application - SALFORD 296+ is recommended for evaluation in:",
           },
           {
             type: "ul",
             items: [
-              "PVC profiles and sidings",
-              "Engineering plastics",
-              "Flexible PVC",
-              "Plastisols",
-              "Polyolefins",
-              "Plasticizer pastes and liquid colors",
-              "Polystyrene and copolymers",
+              "High- and low-pressure decor papers",
+              "Decorative foils",
+              "Laminate flooring and furniture",
+              "Print-based applications",
+            
             ],
           },
         ],
         pdfs: {
           sds: "/sds2.pdf",
-          tds: "/products/626.pdf",
+          tds: "/products/296.pdf",
         },
       },
     ],

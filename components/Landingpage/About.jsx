@@ -39,7 +39,7 @@ export default function AboutUs() {
         <strong>Salford</strong> is a distinguished international supplier
         and trader of <strong>Titanium Dioxide (TiO₂),</strong> dedicated to
         supporting world's fast-growing industrial landscape. We connect
-        Indian businesses with world-class titanium dioxide manufacturers
+         businesses with world-class titanium dioxide manufacturers
         abroad, providing consistent, high-performance raw materials.
       </p>
 

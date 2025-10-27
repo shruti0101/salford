@@ -114,12 +114,12 @@ TiO₂ not only improves visual brightness but also enhances color stability, pr
                 {[
                
                   {
-                    name: "SALFORD 626",
+                    name: "SALFORD 296+",
                     apps: [
-                      "PVC profiles and sidings",
-                      "Engineering plastics and flexible PVC",
-                      "Plasticizer pastes and liquid colors",
-                      "Polystyrene and copolymers",
+                     "High- and low-pressure decor papers",
+              "Decorative foils",
+              "Laminate flooring and furniture",
+              "Print-based applications",
                     ],
                   },
                 ].map((row, idx) => (

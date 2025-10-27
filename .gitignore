@@ -56,7 +56,7 @@ next-env.d.ts
     },
     {
       title: "Paper and Printing Inks",
-      desc: "Titanium dioxide improves whiteness, opacity, and smoothness in paper production, resulting in higher quality sheets that are easier to print on. In printing inks, TiO₂ enhances vividness, sharpness, and brightness. Salford helps Indian publishers, printers, and paper mills achieve better results.",
+      desc: "Titanium dioxide improves whiteness, opacity, and smoothness in paper production, resulting in higher quality sheets that are easier to print on. In printing inks, TiO₂ enhances vividness, sharpness, and brightness. Salford helps World publishers, printers, and paper mills achieve better results.",
       icon: <FaFileAlt />,
       isYellow: false,
     },

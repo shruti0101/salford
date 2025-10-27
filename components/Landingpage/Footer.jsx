@@ -133,19 +133,6 @@ const Footer = () => {
           — Global Titanium Dioxide Manufacturer. All Rights Reserved.
         </div>
 
-        <div className="text-center text-xs sm:text-sm text-white mt-2">
-          <p>
-            Website Designed By Promozione Branding Pvt. Ltd.{" "}
-            <a
-              className="text-blue-400 underline"
-              href="https://www.promozionebranding.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Website Designing Company
-            </a>
-          </p>
-        </div>
       </div>
 
       {/* --- Floating Glow Accent --- */}

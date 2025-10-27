@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-import { MapPin, Phone, Mail, Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
 
 const Page = () => {
   return (
@@ -15,14 +14,10 @@ const Page = () => {
         <div className="absolute inset-0 bg-black/30"></div>
 
         <div className="relative mt-20 z-10 text-white max-w-4xl">
-          <h1 className="text-3xl md:text-5xl font-extrabold tracking-tight drop-shadow-lg">
+          <h1 className="text-3xl tracking-wide md:text-7xl px-9 font-extrabold tracking-tight drop-shadow-lg">
             Contact Us
           </h1>
-          <p className="mt-4 max-w-2xl text-sm md:text-xl leading-relaxed">
-            Together, let’s build a sustainable, brighter future for Indian
-            industry — powered by world-class titanium dioxide and the trusted
-            partnership of Salford.
-          </p>
+      
         </div>
       </div>
 

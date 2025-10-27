@@ -43,6 +43,9 @@ export default function ProductsPage() {
   );
 
   const renderSection = (title, subtitle, description, products) => (
+
+    <>
+    
     <section className="relative w-full bg-gradient-to-b from-white via-[#E6F0FA] to-[#D0E4FA] overflow-hidden py-16 sm:py-20">
       {/* Blue gradient overlay */}
    
@@ -91,7 +94,28 @@ export default function ProductsPage() {
           {products.map(renderProductCard)}
         </div>
       </div>
+
+      
     </section>
+
+
+     
+        <div className="text-center bg-[#D4E6FA] text-xs sm:text-sm text-black ">
+          <p>
+            Website Designed By Promozione Branding Pvt. Ltd.{" "}
+            <a
+              className="text-blue-400 underline"
+              href="https://www.promozionebranding.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Website Designing Company
+            </a>
+          </p>
+        </div>
+    </>
+
+    
   );
 
   return (
@@ -132,7 +156,19 @@ export default function ProductsPage() {
         Our TiO₂ products improve optical performance, ensuring high gloss and uniform color. 
         They are suitable for high-pressure laminates, melamine boards, decorative films, and specialty papers.`,
         laminatesProducts
+
+
+        
       )}
+
+
+
+
+
+
+
+
+     
     </>
   );
 }
