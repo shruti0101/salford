@@ -40,7 +40,7 @@ const CTA = () => {
         </p>
 
         <Link
-          href="/contact"
+          href="/contact-us"
           className="inline-block mt-4 px-6 sm:px-8 py-3 sm:py-4 rounded-full bg-gradient-to-r from-[#8AB0C2] to-[#0082C8] text-white font-semibold shadow-lg hover:scale-105 hover:shadow-blue-400/50 transition-transform duration-300 text-[clamp(0.9rem,2.5vw,1rem)]"
         >
           Contact Our Team
