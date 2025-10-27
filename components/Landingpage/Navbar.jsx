@@ -23,7 +23,7 @@ export default function Navbar() {
     },
     { label: "Industries", link: "/industries" },
     { label: "Applications", link: "/applications" },
-    { label: "News & Events", link: "/news-events" },
+    // { label: "News & Events", link: "/news-events" },  
   ];
 
   return (

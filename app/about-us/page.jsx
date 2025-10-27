@@ -150,7 +150,7 @@ const innovationPoints = [
           <p className="text-white mt-4 md:max-w-2xl text-xs md:text-lg md:leading-relaxed">
             Partner with a Global Leader Today If you are seeking a Titanium
             Dioxide Manufacturer in Germany with the credibility of a trusted
-            titanium dioxide trader in all over world, Salford is your ideal partner.
+            titanium dioxide manufacturer in all over world, Salford is your ideal partner.
             Contact our team today to discuss your requirements, request product
             samples, or explore strategic partnership opportunities. Together,
             let’s build a sustainable, brighter future for
@@ -184,10 +184,10 @@ const innovationPoints = [
             <p className="text-black text-lg leading-relaxed">
               Salford stands as a trusted name in the global titanium dioxide
               market—recognized as a leading Titanium Dioxide Manufacturer in
-              Germany and a prominent titanium dioxide trader in all over world. With a
+              Germany and a prominent titanium dioxide manufacturer in all over world. With a
               deep-rooted commitment to excellence, innovation, and reliability,
               we connect world-class chemical manufacturing expertise with
-              India’s rapidly advancing industrial ecosystem.
+              world rapidly advancing industrial ecosystem.
             </p>
             <p className="text-black text-lg leading-relaxed">
               Our journey began with a clear purpose: to bridge the gap between
@@ -247,7 +247,7 @@ const innovationPoints = [
               </div>
 
               <div className="mt-12 flex flex-wrap gap-4">
-                {["Germany", "in all over world", "Middle East", "Asia"].map(
+                {["Germany", " All over world", "Middle East", "Asia"].map(
                   (region, idx) => (
                     <div
                       key={idx}
@@ -349,7 +349,7 @@ const innovationPoints = [
                   </h4>
                 </div>
                 <p className="text-black text-lg leading-relaxed">
-                  As a leading titanium dioxide trader in all over world, we understand
+                  As a leading titanium dioxide manufacturer in all over world, we understand
                   the unique demands of Global manufacturers—cost-effectiveness,
                   performance, and consistency. Our on-ground presence ensures
                   timely deliveries and personalized support.
@@ -470,7 +470,7 @@ const innovationPoints = [
               Sustainability and Responsibility
             </h2>
             <h3 className="text-2xl text-[#003a70] font-semibold">
-              Manufacturing and Trading with Integrity
+              Manufacturing with Integrity
             </h3>
           </div>
 
@@ -491,7 +491,7 @@ const innovationPoints = [
                 emissions, and conserve resources.
                 <br />
                 <br />
-                As a titanium dioxide trader in all over world, we extend the same
+                As a titanium dioxide manufacturer in all over world, we extend the same
                 responsibility through ethical sourcing, safe transportation,
                 and regulatory compliance.
               </p>

@@ -38,7 +38,7 @@ const Page = () => {
         <h3 className="text-2xl font-semibold mb-3">Architectural Coatings</h3>
         <ul className="list-disc text-lg pl-6 mb-6 space-y-2">
           <li>
-            or interior paints, it offers bright whites, vivid colors, and the
+            Or interior paints, it offers bright whites, vivid colors, and the
             ideal gloss level for any aesthetic. Its excellent opacity ensures
             smooth, uniform coverage and long-lasting brightness.
           </li>
@@ -109,12 +109,6 @@ const Page = () => {
           providing consistency and long-term performance in every formulation.
         </p>
       </div>
-
-
-
-
-
-
 
 
 

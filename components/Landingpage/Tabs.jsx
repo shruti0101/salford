@@ -7,8 +7,8 @@ import Image from "next/image";
 const tabs = [
   {
     id: 1,
-    title: "Driving India’s Industrial Growth",
-    description: `Salford is dedicated to supporting India’s rapidly growing industrial landscape by ensuring reliable access to premium titanium dioxide (TiO₂). As a foreign trading partner, we understand the unique challenges and opportunities in the Global market. Our goal is to provide businesses with a consistent supply of world-class TiO₂, helping them meet international standards, enhance product quality, and stay competitive in a dynamic economy.
+    title: "Driving World’s Industrial Growth",
+    description: `Salford is dedicated to supporting World rapidly growing industrial landscape by ensuring reliable access to premium titanium dioxide (TiO₂). As a foreign trading partner, we understand the unique challenges and opportunities in the Global market. Our goal is to provide businesses with a consistent supply of world-class TiO₂, helping them meet international standards, enhance product quality, and stay competitive in a dynamic economy.
 We focus on creating value for Global industries through a combination of expertise, service, and reliability:`,
     points: [
       "Timely Deliveries – Efficient logistics and inventory management ensure clients receive materials when they need them.",

@@ -13,7 +13,7 @@ const featuredProducts = categories
 
 export default function HomeProducts() {
   return (
-    <section className="py-14 sm:py-16 md:py-20 px-4 sm:px-6 bg-[#f0f8ff]">
+    <section className="py-10 sm:py-16 md:py-20 px-4 sm:px-6 bg-[#f0f8ff]">
       <div className="max-w-7xl mx-auto space-y-10">
         {/* ===== Section Header ===== */}
         <div className="text-center space-y-4 px-2">
@@ -70,7 +70,7 @@ export default function HomeProducts() {
         <div className="text-center">
           <Link
             href="/products"
-            className="inline-block mt-8 px-6 sm:px-8 py-3 sm:py-4 rounded-full bg-gradient-to-r from-[#8AB0C2] to-[#0082C8] text-white text-sm sm:text-base md:text-lg font-semibold shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300"
+            className="inline-block  px-6 sm:px-8 py-3 sm:py-4 rounded-full bg-gradient-to-r from-[#8AB0C2] to-[#0082C8] text-white text-lg sm:text-lg md:text-xl font-semibold shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300"
           >
             See All Products
           </Link>

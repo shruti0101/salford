@@ -145,6 +145,16 @@ Through proactive product stewardship, Salford enhances product performance whil
                     name: "SALFORD 288",
                     apps: ["Masterbatches and compound", "PVC films", "Polystyrene and copolymers", "Engineering plastic"],
                   },
+
+                    {
+                    name: "SALFORD 626",
+                    apps: [
+                      "PVC profiles and sidings",
+                      "Engineering plastics and flexible PVC",
+                      "Plasticizer pastes and liquid colors",
+                      "Polystyrene and copolymers",
+                    ],
+                  },
                 ].map((product, idx) => (
                   <tr key={idx} className="hover:bg-blue-50 transition">
                     <td className="py-5 px-6 font-semibold text-[#004C91]">{product.name}</td>

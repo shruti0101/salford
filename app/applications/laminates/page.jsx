@@ -106,6 +106,63 @@ const Page = () => {
           surface quality.
         </p>
       </div>
+
+
+
+
+
+
+
+  {/* ===== Scrollable Product Table Section ===== */}
+      <section className="relative bg-white py-20">
+        <div className="max-w-6xl mx-auto px-6 md:px-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-10 text-[#004C91]">
+            Salford TiO₂ Product Grades for Laminates
+          </h2>
+
+          <div className="overflow-y-auto h-[70vh] shadow-xl rounded-2xl border border-gray-200">
+            <table className="min-w-full bg-white text-left">
+              <thead className="bg-gradient-to-r from-[#4A90E2] to-[#357ABD] text-white">
+                <tr>
+                  <th className="py-4 px-6 font-semibold text-lg">Product</th>
+                  <th className="py-4 px-6 font-semibold text-lg">
+                    Applications
+                  </th>
+                </tr>
+              </thead>
+
+              <tbody className="divide-y divide-gray-100">
+                {[
+               
+                  {
+                    name: "SALFORD 626",
+                    apps: [
+                      "PVC profiles and sidings",
+                      "Engineering plastics and flexible PVC",
+                      "Plasticizer pastes and liquid colors",
+                      "Polystyrene and copolymers",
+                    ],
+                  },
+                ].map((row, idx) => (
+                  <tr key={idx} className="hover:bg-blue-50 transition">
+                    <td className="py-5 px-6 font-semibold text-[#004C91]">
+                      {row.name}
+                    </td>
+                    <td className="py-5 px-6 space-y-2 text-gray-700">
+                      {row.apps.map((a, i) => (
+                        <p key={i}>{a}</p>
+                      ))}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+
+
     </div>
   );
 };

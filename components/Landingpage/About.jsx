@@ -59,7 +59,7 @@ export default function AboutUs() {
         ensures businesses are equipped with the right grades and
         specifications to meet production goals. With a focus on reliability
         and global standards, we are your trusted{" "}
-        <strong>Titanium Dioxide trading partner.</strong>
+        <strong>Titanium Dioxide Manufacturing partner.</strong>
       </p>
 
       {/* Actions */}

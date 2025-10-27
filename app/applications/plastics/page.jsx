@@ -97,6 +97,87 @@ A pioneer in chloride-process TiO₂ technology, Salford stands as a global lead
      Salford TiO₂ grades are ideal for coloring general-purpose and high-impact polystyrene applications. They deliver a maximum bluish-white undertone, strong tinting strength, thermal stability, and light discoloration resistance — ensuring both visual appeal and processing durability in end-use products.
         </p>
       </div>
+
+
+
+
+
+
+
+
+     <section className="relative bg-white py-20">
+        <div className="max-w-6xl mx-auto px-6 md:px-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-10 text-[#004C91]">
+            Salford TiO₂ Product Grades for Plastics
+          </h2>
+
+          <div className="overflow-y-auto h-[70vh] shadow-lg rounded-2xl border border-gray-200">
+            <table className="min-w-full bg-white text-left">
+              <thead className="bg-gradient-to-r from-[#4A90E2] to-[#357ABD] text-white">
+                <tr>
+                  <th className="py-4 px-6 font-semibold text-lg">Product</th>
+                  <th className="py-4 px-6 font-semibold text-lg">Applications</th>
+                </tr>
+              </thead>
+
+              <tbody className="divide-y divide-gray-100">
+                {[
+                  {
+                    name: "SALFORD 201",
+                    apps: [
+                      "High-temperature cast and extrusion coating films",
+                      "Extrusion coated paper",
+                      "High-quality color masterbatch",
+                    ],
+                  },
+                  {
+                    name: "SALFORD 250",
+                    apps: [
+                      "ABS parts for automotive",
+                      "Appliances colour stability under UV stress",
+                      "Thermoplastic masterbatches",
+                      "High-performance films such polypropylene (BOPP) for snack packaging",
+                    ],
+                  },
+                  {
+                    name: "SALFORD 280",
+                    apps: ["Polyolefin masterbatch", "Styrenics", "ABS", "Flexible PVC and plastisols"],
+                  },
+                  {
+                    name: "SALFORD 260",
+                    apps: [
+                      "Building products for outdoor use (windows, gutters, decks, fences)",
+                      "Stadium seats",
+                      "High-end patio furniture",
+                      "Automotive body panels",
+                    ],
+                  },
+                  {
+                    name: "SALFORD 269",
+                    apps: ["Polyolefin masterbatch", "Styrenics", "Interior rigid PVC", "ABS", "Flexible PVC and plastisols"],
+                  },
+                  {
+                    name: "SALFORD 288",
+                    apps: ["Masterbatches and compound", "PVC films", "Polystyrene and copolymers", "Engineering plastic"],
+                  },
+                ].map((product, idx) => (
+                  <tr key={idx} className="hover:bg-blue-50 transition">
+                    <td className="py-5 px-6 font-semibold text-[#004C91]">{product.name}</td>
+                    <td className="py-5 px-6 space-y-2 text-gray-700">
+                      {product.apps.map((a, i) => (
+                        <p key={i}>{a}</p>
+                      ))}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+
+
     </div>
   );
 };

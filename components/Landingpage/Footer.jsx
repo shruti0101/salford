@@ -42,7 +42,7 @@ const Footer = () => {
             </div>
             <p className="text-sm leading-relaxed text-white max-w-xs  sm:mx-0">
               Partner with a Global Leader Today. As a Titanium Dioxide
-              Manufacturer in Germany and trusted global trader, Salford
+              Manufacturer in Germany, Salford
               delivers unmatched purity, brightness, and quality.
             </p>
           </div>
@@ -57,7 +57,7 @@ const Footer = () => {
                 { name: "Home", href: "/" },
                 { name: "About Us", href: "/about-us" },
                 { name: "Products", href: "/products" },
-                { name: "Insights", href: "/blogs" },
+                // { name: "News & Events", href: "/blogs" },
               ].map((item) => (
                 <li key={item.name}>
                   <Link
