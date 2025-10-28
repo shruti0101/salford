@@ -109,7 +109,7 @@ export const categories = [
         name: "SALFORD 280",
         metaTitle: "SALFORD 280",
         metaDescription: "SALFORD 280",
-        banner: "/products/280.jpg",
+        banner: "/products/280.webp",
         excerpt: [
           {
             type: "p",
@@ -158,7 +158,7 @@ export const categories = [
         name: "SALFORD 260",
         metaTitle: "SALFORD 260",
         metaDescription: "SALFORD 260",
-        banner: "/products/260.jpg",
+        banner: "/products/260.webp",
         excerpt: [
           {
             type: "p",
@@ -257,7 +257,7 @@ export const categories = [
         name: "SALFORD 288",
         metaTitle: "SALFORD 288",
         metaDescription: "SALFORD 288",
-        banner: "/products/288.png",
+        banner: "/products/288.webp",
         excerpt: [
           {
             type: "p",
@@ -308,7 +308,7 @@ export const categories = [
         name: "SALFORD 626",
         metaTitle: "SALFORD 626",
         metaDescription: "SALFORD 626",
-        banner: "/products/626.jpg",
+        banner: "/products/626.webp",
         excerpt: [
           {
             type: "p",
@@ -373,7 +373,7 @@ export const categories = [
         name: "SALFORD 296+",
         metaTitle: "SALFORD 296+",
         metaDescription: "SALFORD 296+",
-        banner: "/products/296+.jpg",
+        banner: "/products/296+.webp",
         excerpt: [
           {
             type: "p",
@@ -495,7 +495,7 @@ export const categories = [
         name: "SALFORD 686",
         metaTitle: "SALFORD 686",
         metaDescription: "SALFORD 686",
-        banner: "/products/686.jpg",
+        banner: "/products/686.webp",
     excerpt: [
       {
         type: "p",
@@ -552,7 +552,7 @@ export const categories = [
         name: "SALFORD 660",
         metaTitle: "SALFORD 660",
         metaDescription: "SALFORD 660",
-        banner: "/products/660.jpg",
+        banner: "/products/660.webp",
  excerpt: [
       {
         type: "p",
@@ -606,7 +606,7 @@ export const categories = [
         name: "SALFORD 618",
         metaTitle: "SALFORD 618",
         metaDescription: "SALFORD 618",
-        banner: "/products/618.jpg",
+        banner: "/products/618.webp",
    excerpt: [
       {
         type: "p",
@@ -662,7 +662,7 @@ export const categories = [
         name: "SALFORD 620",
         metaTitle: "SALFORD 620",
         metaDescription: "SALFORD 620",
-        banner: "/products/620.jpg",
+        banner: "/products/620.webp",
         excerpt: [
       {
         type: "p",
