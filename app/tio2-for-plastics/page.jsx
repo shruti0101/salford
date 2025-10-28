@@ -68,7 +68,7 @@ export default function ProductsPage() {
       {/* Banner Section */}
       <div
         className="relative w-full h-[50vh] md:h-screen bg-cover bg-center flex items-center justify-center"
-        style={{ backgroundImage: "url('/category/plastic.jpg')" }}
+        style={{ backgroundImage: "url('/category/plastic.webp')" }}
       />
 
       {/* Plastics Section */}

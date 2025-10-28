@@ -27,15 +27,15 @@ export default function Navbar() {
   ];
 
   return (
-    <header className="fixed  border-b border-black shadow-md top-0 left-0 w-full z-50 bg-white transition-all duration-500">
-      <div className="w-full mx-auto flex items-center justify-between px-7 md:px-15 py-3">
+    <header className="fixed   border-b border-black shadow-md top-0 left-0 w-full z-50 bg-white transition-all duration-500">
+      <div className="w-full mx-auto flex items-center justify-between px-7 md:px-15 py-1 md:py-3 lg:py-4">
         {/* Logo */}
         <Link href="/">
           <div className="flex items-center flex-shrink-0">
             <Image
               src="/about/logo.jpg"
               alt="Logo"
-              width={100}
+              width={90}
               height={65}
               className="rounded-2xl"
             />

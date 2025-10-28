@@ -5,12 +5,12 @@ import Image from "next/image";
 import Link from "next/link";
 
 const products = [
-  { name: "Titanium Dioxide - Plastics", link: "/products/tio2-for-plastics" },
+  { name: "Titanium Dioxide - Plastics", link: "/tio2-for-plastics" },
   {
     name: "Titanium Dioxide - Laminates",
-    link: "/products/tio2-for-laminates",
+    link: "/tio2-for-laminates",
   },
-  { name: "Titanium Dioxide - Coatings", link: "/products/tio2-for-coatings" },
+  { name: "Titanium Dioxide - Coatings", link: "/tio2-for-coatings" },
 ];
 
 const Footer = () => {

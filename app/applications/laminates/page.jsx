@@ -113,6 +113,7 @@ const Page = () => {
 
 
 
+
   {/* ===== Scrollable Product Table Section ===== */}
       <section className="relative bg-white py-20">
         <div className="max-w-6xl mx-auto px-6 md:px-12">
@@ -120,7 +121,7 @@ const Page = () => {
             Salford TiO₂ Product Grades for Laminates
           </h2>
 
-          <div className="overflow-y-auto h-[70vh] shadow-xl rounded-2xl border border-gray-200">
+          <div className="overflow-y-auto h-[40vh] shadow-xl rounded-2xl border border-gray-200">
             <table className="min-w-full bg-white text-left">
               <thead className="bg-gradient-to-r from-[#4A90E2] to-[#357ABD] text-white">
                 <tr>

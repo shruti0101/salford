@@ -8,7 +8,7 @@ const tabs = [
   {
     id: 1,
     title: "Driving World’s Industrial Growth",
-    description: `Salford is dedicated to supporting World rapidly growing industrial landscape by ensuring reliable access to premium titanium dioxide (TiO₂). As a foreign trading partner, we understand the unique challenges and opportunities in the Global market. Our goal is to provide businesses with a consistent supply of world-class TiO₂, helping them meet international standards, enhance product quality, and stay competitive in a dynamic economy.
+    description: `Salford is dedicated to supporting World rapidly growing industrial landscape by ensuring reliable access to premium titanium dioxide (TiO₂). As a foreign Manufacturing  partner, we understand the unique challenges and opportunities in the Global market. Our goal is to provide businesses with a consistent supply of world-class TiO₂, helping them meet international standards, enhance product quality, and stay competitive in a dynamic economy.
 We focus on creating value for Global industries through a combination of expertise, service, and reliability:`,
     points: [
       "Timely Deliveries – Efficient logistics and inventory management ensure clients receive materials when they need them.",
@@ -21,7 +21,7 @@ We focus on creating value for Global industries through a combination of expert
   {
     id: 2,
     title: "Sustainability and Responsibility",
-    description: `At Salford, we recognize that responsible business practices are essential for long-term growth and trust. As a foreign trading partner in all over world, we are committed to ensuring that our titanium dioxide (TiO₂) is sourced, handled, and delivered in ways that protect the environment, ensure safety, and meet global compliance standards. Sustainability is not just a policy—it is an integral part of how we operate across all industries we serve.`,
+    description: `At Salford, we recognize that responsible business practices are essential for long-term growth and trust. As a foreign Manufacturing  partner in all over world, we are committed to ensuring that our titanium dioxide (TiO₂) is sourced, handled, and delivered in ways that protect the environment, ensure safety, and meet global compliance standards. Sustainability is not just a policy—it is an integral part of how we operate across all industries we serve.`,
     points: [
       "Eco-Friendly Sourcing – Partnering with manufacturers who minimize ecological footprint.",
       "Regulatory Compliance – Adhering to REACH, FDA, ISO, and global regulations.",

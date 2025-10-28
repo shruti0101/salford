@@ -8,13 +8,13 @@ export default function AboutUs() {
   return (
   <section
   style={{ backgroundImage: "url(/bg-layer.jpg)" }}
-  className="relative bg-[#FFFEF7] bg-center bg-cover py-8"
+  className="relative bg-[#FFFEF7] bg-center bg-cover py-3 md:py-8"
 >
   {/* 🔹 Overlay */}
   <div className="absolute inset-0 bg-white/50 dark:bg-black/20 pointer-events-none"></div>
 
   {/* Main container */}
-  <div className="relative z-20 w-full grid grid-cols-1 lg:grid-cols-2 items-center gap-10 px-10">
+  <div className="relative z-20 w-full grid grid-cols-1 lg:grid-cols-2 items-center gap-10 px-3 md:px-10">
     {/* Left content (animation / image) */}
     <div className="flex justify-center">
       <Image
@@ -28,16 +28,16 @@ export default function AboutUs() {
 
     {/* Right content (text + button + contact) */}
     <div>
-      <h2 className="text-3xl lg:text-4xl font-bold text-gray-900">
+      <h2 className="text-2xl lg:text-4xl font-bold text-gray-900">
         Salford –
       </h2>
-      <h1 className="text-[#1B5AA2] font-bold text-3xl lg:text-4xl mb-6">
-        Global Titanium Dioxide Supplier
+      <h1 className="text-[#1B5AA2] font-bold text-2xl lg:text-4xl mb-6">
+        Global Titanium Dioxide manufacturer
       </h1>
 
       <p className="text-lg text-black leading-relaxed mb-4">
-        <strong>Salford</strong> is a distinguished international supplier
-        and trader of <strong>Titanium Dioxide (TiO₂),</strong> dedicated to
+        <strong>Salford</strong> is a distinguished international manufacturer
+        and manufacturer of <strong>Titanium Dioxide (TiO₂),</strong> dedicated to
         supporting world's fast-growing industrial landscape. We connect
          businesses with world-class titanium dioxide manufacturers
         abroad, providing consistent, high-performance raw materials.

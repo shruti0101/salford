@@ -4,22 +4,31 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <section className="relative h-screen w-full overflow-hidden">
+    <section className="relative h-[50vh] md:h-screen w-full overflow-hidden">
       {/* ✅ Desktop Background Image */}
       <div
         className="hidden md:block absolute inset-0 bg-center bg-cover mt-10"
         style={{ backgroundImage: "url(/herobannerfinal.jpg)" }}
       ></div>
 
-      {/* ✅ Mobile Background Image */}
+      {/* ✅ Mobile Background Image with Text */}
       <div
-        className="block md:hidden absolute inset-0 bg-center bg-cover mt-10"
-        style={{ backgroundImage: "url(/mobbanner.jpg)" }}
-      ></div>
+        className="block md:hidden absolute inset-0 bg-center bg-cover bg-no-repeat flex flex-col justify-center items-center text-center px-6"
+        style={{ backgroundImage: "url(/mobbanner.png)" }}
+      >
+        <div className="block md:hidden p-4 mt-7 rounded-xl">
+          <h2 className="text-white text-4xl  font-semibold">
+            Your Trusted TiO₂ Partner
+          </h2>
+          <p className="text-white bg-cyan-500/40 rounded-lg mt-2 text-lg ">
+            Delivering quality titanium dioxide solutions for every industry.
+          </p>
+        </div>
+      </div>
 
-      {/* Layer 1 - Slow, gradient overlay */}
+      {/* ✅ Animated Gradient Layer (Desktop only) */}
       <svg
-        className="absolute w-[200%] h-[200%] top-[0%] left-[-50%] animate-diagonal-slow"
+        className="hidden md:block absolute w-[200%] h-[200%] top-[0%] left-[-50%] animate-diagonal-slow"
         viewBox="0 0 1440 320"
         preserveAspectRatio="none"
       >

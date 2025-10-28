@@ -4,13 +4,13 @@ import Image from "next/image";
 import CTA from "@/components/Landingpage/Cta";
 
 const industries = [
-  { image: "/industry/1.jpg", name: "Agriculture" },
+  { image: "/industry/1.webp", name: "Agriculture" },
   // { image: "/industry/3.jpeg", name: "Oil & Gas Industry" },
-  { image: "/industry/4.png", name: "Plastics & Polymers" },
-  { image: "/industry/5.jpg", name: "Building And Homes" },
-  { image: "/industry/8.jpeg", name: "Laminates" },
-  { image: "/industry/6.jpg", name: "Medical/Personal Care" },
-  { image: "/industry/7.jpg", name: "Footwear & Apparel" },
+  { image: "/industry/4.webp", name: "Plastics & Polymers" },
+  { image: "/industry/5.webp", name: "Building And Homes" },
+  { image: "/industry/8.webp", name: "Laminates" },
+  { image: "/industry/6.webp", name: "Medical/Personal Care" },
+  { image: "/industry/7.webp", name: "Footwear & Apparel" },
 ];
 
 export default function IndustriesSection() {

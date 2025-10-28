@@ -1,10 +1,8 @@
 "use client";
 
-import { useEffect } from "react";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
-import Link from "next/link";
-import { FaChevronUp } from "react-icons/fa";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -13,13 +11,13 @@ import "swiper/css/navigation";
 
 /* Carousel data */
 const industries = [
-  { image: "/industry/1.jpg", name: "Agriculture"  },
-  { image: "/industry/3.jpeg", name: "Oil & Gas Industry" },
-  { image: "/industry/4.png", name: "Plastics & Polymers" },
-  { image: "/industry/5.jpg", name: "Building And Homes" },
-  { image: "/industry/8.jpeg", name: "Laminates" },
-  { image: "/industry/6.jpg", name: "Medical/Personal Care" },
-  { image: "/industry/7.jpg", name: "Footwear & Apparel" },
+  { image: "/industry/1.webp", name: "Agriculture"  },
+  { image: "/industry/3.webp", name: "Oil & Gas Industry" },
+  { image: "/industry/4.webp", name: "Plastics & Polymers" },
+  { image: "/industry/5.webp", name: "Building And Homes" },
+  { image: "/industry/8.webp", name: "Laminates" },
+  { image: "/industry/6.webp", name: "Medical/Personal Care" },
+  { image: "/industry/7.webp", name: "Footwear & Apparel" },
 ];
 
 const ServicesCarousel = () => {
@@ -51,7 +49,7 @@ const ServicesCarousel = () => {
       </div>
 
       {/* Carousel */}
-      <div className="md:max-w-7xl mx-auto ">
+      <div className="md:max-w-6xl mx-auto ">
         <Swiper
           modules={[Navigation, Autoplay]}
           navigation

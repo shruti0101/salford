@@ -122,13 +122,13 @@ const innovationPoints = [
   ];
 
   const images = [
-    "/industry/3.jpeg",
+    "/industry/3.webp",
     "/about/global1.webp",
     "/about/coatings.avif",
-    "/industry/4.png",
+    "/industry/4.webp",
 
-    "/industry/5.jpg",
-    "/industry/2.jpg",
+    "/industry/5.webp",
+    "/industry/2.webp",
   ];
 
   return (
@@ -149,8 +149,7 @@ const innovationPoints = [
           </h1>
           <p className="text-white mt-4 md:max-w-2xl text-xs md:text-lg md:leading-relaxed">
             Partner with a Global Leader Today If you are seeking a Titanium
-            Dioxide Manufacturer in Germany with the credibility of a trusted
-            titanium dioxide manufacturer in all over world, Salford is your ideal partner.
+            Dioxide Manufacturer in Germany 
             Contact our team today to discuss your requirements, request product
             samples, or explore strategic partnership opportunities. Together,
             let’s build a sustainable, brighter future for
@@ -165,7 +164,7 @@ const innovationPoints = [
           {/* Right Image */}
           <div className="relative w-full h-[400px] md:h-[500px] rounded-md  overflow-hidden ">
             <Image
-              src="/about/Gemini_Generated_Image_jqoxycjqoxycjqox.png" // Replace with your actual image
+              src="/about/about1.webp" // Replace with your actual image
               alt="Salford Titanium Dioxide Manufacturing"
               fill
               className="object-cover "

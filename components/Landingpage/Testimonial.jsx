@@ -20,7 +20,7 @@ const testimonials = [
 
   },
 
- { text: "We have worked with several suppliers in the past, but none match the professionalism of Aanya Enterprise as a Titanium Dioxide wholesaler. Their products improve the strength and stability of our rubber goods, which has enhanced customer satisfaction for our end products. Beyond just supply, their customer support and commitment to long-term relationships have made them our preferred partner.", name: "Rubber & Industrial Products Manufacturer – Chennai", },
+ { text: "We have worked with several manufacturers in the past, but none match the professionalism of Aanya Enterprise as a Titanium Dioxide wholesaler. Their products improve the strength and stability of our rubber goods, which has enhanced customer satisfaction for our end products. Beyond just supply, their customer support and commitment to long-term relationships have made them our preferred partner.", name: "Rubber & Industrial Products Manufacturer – Chennai", },
 ];
 
 export default function TestimonialSlider() {

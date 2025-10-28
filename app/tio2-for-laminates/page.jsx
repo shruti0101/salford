@@ -75,7 +75,7 @@ export default function ProductsPage() {
       {/* ===== Banner Section ===== */}
       <div
         className="relative w-full h-[50vh] md:h-[90vh] bg-cover bg-center flex items-center justify-center"
-        style={{ backgroundImage: "url('/category/laminates.jpg')" }}
+        style={{ backgroundImage: "url('/category/laminates.webp')" }}
       />
 
       {/* ===== Main Content Section ===== */}
@@ -99,7 +99,7 @@ TiO₂ not only improves visual brightness but also enhances color stability, pr
             Salford TiO₂ Product Grades for Laminates
           </h2>
 
-          <div className="overflow-y-auto h-[70vh] shadow-xl rounded-2xl border border-gray-200">
+          <div className="overflow-y-auto h-[40vh] shadow-xl rounded-2xl border border-gray-200">
             <table className="min-w-full bg-white text-left">
               <thead className="bg-gradient-to-r from-[#4A90E2] to-[#357ABD] text-white">
                 <tr>

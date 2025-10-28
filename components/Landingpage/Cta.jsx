@@ -6,7 +6,7 @@ import Link from "next/link";
 const CTA = () => {
   return (
     <section
-      style={{ backgroundImage: "url(/about/cta.png)" }}
+      style={{ backgroundImage: "url(/about/cta.webp)" }}
       className="relative bg-cover bg-center bg-no-repeat text-white py-16 sm:py-20 px-4 sm:px-6 md:px-10 overflow-hidden"
     >
       {/* Dark Overlay */}
@@ -27,7 +27,7 @@ const CTA = () => {
 
         <p className="text-[clamp(0.9rem,2.5vw,1.125rem)] leading-relaxed max-w-3xl text-gray-100">
           If you are seeking a Titanium Dioxide Manufacturer in Germany with the
-          credibility of a trusted titanium dioxide trader across the world,{" "}
+          credibility of a trusted titanium dioxide manufacturer across the world,{" "}
           <span className="font-semibold text-white">Salford</span> is your ideal partner.
           <br className="hidden sm:block" />
           Contact our team today to discuss your requirements, request product

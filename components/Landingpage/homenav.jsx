@@ -10,17 +10,18 @@ const HomeNav = () => {
   ];
 
   return (
-    <section className="w-full py-8 bg-gray-50 relative">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 px-8">
+    <section className="w-full py-4 md:py-8 bg-gray-50 relative">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 md:gap-8 px-8">
         {cards.map((card, idx) => (
           <Link href={card.link}
             key={idx}
-            className="relative flex flex-col items-center justify-center p-3 rounded-2xl shadow-lg bg-gradient-to-r from-[#8AB0C2] to-[#0082C8] text-white text-center transition-transform duration-500 hover:scale-105 hover:shadow-2xl cursor-pointer group overflow-hidden"
+            className="relative flex md:flex-col items-center justify-center p-3 rounded-2xl shadow-lg bg-gradient-to-r from-[#8AB0C2] to-[#0082C8] text-white text-center transition-transform duration-500 hover:scale-105 hover:shadow-2xl cursor-pointer group overflow-hidden"
           >
-            {/* Icon */}
-            <div className="mb-4">{card.icon}</div>
+          
             {/* Title */}
             <h3 className="text-xl font-bold">{card.title}</h3>
+              {/* Icon */}
+            <div className="mb-4 hidden md:block ">{card.icon}</div>
             {/* Animated Overlay */}
             <div className="absolute inset-0 bg-cyan-300 opacity-0 group-hover:opacity-20 transition-opacity duration-500 rounded-2xl"></div>
             {/* Subtle Glow */}
