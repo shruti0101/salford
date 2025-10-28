@@ -82,7 +82,7 @@ const Footer = () => {
             <ul className="space-y-3 text-[15px] text-white uppercase tracking-wide">
               {[
                 { name: "Industries", href: "/industries" },
-                { name: "Application", href: "/application" },
+                { name: "Application", href: "/applications" },
                 { name: "Contact Us", href: "/contact-us" },
               ].map((item) => (
                 <li key={item.name}>

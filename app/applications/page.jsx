@@ -34,7 +34,7 @@ const industries = [
         }}
       ></div>
 
-      <section className="mt-8 py-10 bg-gradient-to-b from-white to-blue-50">
+      <section className="mt-2 md:mt-8 py-10 bg-gradient-to-b from-white to-blue-50">
         <div className="w-full mx-auto px-6">
           {/* Header */}
           <div className="text-center mb-16">

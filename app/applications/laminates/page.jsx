@@ -115,7 +115,7 @@ const Page = () => {
 
 
   {/* ===== Scrollable Product Table Section ===== */}
-      <section className="relative bg-white py-20">
+      <section className="relative bg-white md:py-20">
         <div className="max-w-6xl mx-auto px-6 md:px-12">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-10 text-[#004C91]">
             Salford TiO₂ Product Grades for Laminates

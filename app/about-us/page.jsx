@@ -144,10 +144,10 @@ const innovationPoints = [
 
         {/* Content */}
         <div className="relative z-10 text-white ">
-          <h1 className="text-2xl font-serif text-white md:text-6xl font-extrabold tracking-tight drop-shadow-lg mt-20">
+          <h1 className="text-3xl font-serif text-white md:text-6xl font-extrabold tracking-tight drop-shadow-lg mt-20">
             About Us
           </h1>
-          <p className="text-white mt-4 md:max-w-2xl text-xs md:text-lg md:leading-relaxed">
+          <p className="text-white mt-4 md:max-w-2xl text-sm md:text-lg md:leading-relaxed">
             Partner with a Global Leader Today If you are seeking a Titanium
             Dioxide Manufacturer in Germany 
             Contact our team today to discuss your requirements, request product
