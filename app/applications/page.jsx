@@ -11,13 +11,13 @@ const industries = [
     desc: "Enhance brightness, opacity, and durability in architectural, automotive, and industrial coatings. Our titanium dioxide ensures long-lasting color retention and superior surface protection under demanding conditions.",
   },
   {
-    image: "/category/plastic.jpg",
+    image: "/category/plastic.webp",
     name: "Solutions for Plastics",
      link:"/applications/plastics",
     desc: "Achieve brilliant whiteness, high opacity, and UV resistance in masterbatches and plastic compounds. Engineered to improve processing stability and maintain product aesthetics across applications.",
   },
   {
-    image: "/category/laminates.jpg",
+    image: "/category/laminates.webp",
     name: "Solutions for Laminates",
      link:"/applications/laminates",
     desc: "Deliver exceptional whiteness and smoothness to decorative laminates and films. Our TiO₂ grades provide uniform dispersion, high gloss, and superior light stability for premium surface finishes.",

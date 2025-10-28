@@ -7,7 +7,7 @@ const Page = () => {
       <div
         className="relative w-full px-8 bg-cover bg-center h-[50vh] md:h-[90vh] flex flex-col items-start justify-center overflow-hidden"
         style={{
-          backgroundImage: "url('/category/laminates.jpg')",
+          backgroundImage: "url('/category/laminates.webp')",
         }}
       >
         <div className="bg-black/50 absolute inset-0" />
