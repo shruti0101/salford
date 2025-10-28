@@ -10,12 +10,12 @@
 
 //   // Your 6 categories (image + name). Replace src with real paths.
 //   const categories = [
-//     { name: "Plastics", src: "/plastics.jpg" },
-//     { name: "Paper & Paper Laminates", src: "/paper.jpg" },
-//     { name: "Pharma & Cosmetics ", src: "/phrama.jpg" },
-//     { name: "Inks", src: "/inks.jpg" },
+//     { name: "Plastics", src: "/plastics.webp" },
+//     { name: "Paper & Paper Laminates", src: "/paper.webp" },
+//     { name: "Pharma & Cosmetics ", src: "/phrama.webp" },
+//     { name: "Inks", src: "/inks.webp" },
 //     { name: "Paints & Coatings", src: "/coatings.webp" },
-//      { name: "Industry Catalyst", src: "/catalyst.png" },
+//      { name: "Industry Catalyst", src: "/catalyst.webp" },
 //   ];
 
 //   // Build cards: for each category show image card then colored text card

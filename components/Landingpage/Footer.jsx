@@ -22,7 +22,7 @@ const Footer = () => {
       {/* --- Premium Overlay --- */}
       <div className="absolute inset-0 bg-gradient-to-br from-[#0A0A0A]/95 via-[#121212]/90 to-[#1F1F1F]/95"></div>
       <div className="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-[#F5B041] via-[#D33F00] to-[#F5B041] opacity-80"></div>
-      <div className="absolute inset-0 bg-[url('/patterns/noise.png')] opacity-20 mix-blend-overlay"></div>
+      <div className="absolute inset-0 bg-[url('/patterns/noise.webp')] opacity-20 mix-blend-overlay"></div>
 
       {/* --- Main Content --- */}
       <div className="relative max-w-7xl mx-auto px-6 lg:px-10">
@@ -32,7 +32,7 @@ const Footer = () => {
             <div className=" mb-6">
               <div className="p-[2px] rounded-lg bg-gradient-to-tr from-[#F5B041] to-[#D33F00] inline-block">
                 <Image
-                  src="/about/logo.jpg"
+                  src="/logo.webp"
                   alt="Salford Logo"
                   width={120}
                   height={60}

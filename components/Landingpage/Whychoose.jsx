@@ -113,7 +113,7 @@ export default function WhyChooseUs() {
             {/* Image */}
             <div className="relative z-10 w-full max-w-[600px] sm:max-w-[500px] md:max-w-[520px] overflow-hidden rounded-xl shadow-2xl group">
               <Image
-                src="/pvc-resin-factory.jpg"
+                src="/pvc-resin-factory.webp"
                 alt="Plant"
                 width={960}
                 height={540}

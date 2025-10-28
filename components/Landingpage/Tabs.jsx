@@ -16,7 +16,7 @@ We focus on creating value for Global industries through a combination of expert
       "Local Support with Global Standards – Technical assistance for optimal TiO₂ usage, compliant with international specifications.",
       "Strengthening Partnerships – Building long-term relationships across all over world.",
     ],
-    image: "/pigment-wave-1.jpg",
+    image: "/pigment-wave-1.webp",
   },
   {
     id: 2,
@@ -28,7 +28,7 @@ We focus on creating value for Global industries through a combination of expert
       "Safe Handling & Transport – Shipments managed with strict safety protocols.",
       "Promoting Responsible Applications – Guidance on safe TiO₂ usage.",
     ],
-    image: "/pigment-wave-2.jpg",
+    image: "/pigment-wave-2.webp",
   },
   {
     id: 3,
@@ -42,7 +42,7 @@ We focus on fostering partnerships through several key initiatives:`,
       "Flexible Solutions – Adapting grades, packaging, and volumes.",
       "Long-Term Commitment – Sustainable partnerships that drive success.",
     ],
-    image: "/pigment-wave-3.jpg",
+    image: "/pigment-wave-3.webp",
   },
 ];
 

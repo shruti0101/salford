@@ -7,7 +7,7 @@ export default function AboutUs() {
 
   return (
   <section
-  style={{ backgroundImage: "url(/bg-layer.jpg)" }}
+  style={{ backgroundImage: "url(/bg-layer.webp)" }}
   className="relative bg-[#FFFEF7] bg-center bg-cover py-3 md:py-8"
 >
   {/* 🔹 Overlay */}

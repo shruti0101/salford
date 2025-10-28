@@ -103,7 +103,7 @@ export default function PremiumFAQ() {
         transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
         className="absolute top-0 left-0 hidden md:block"
       >
-        <Image src="/atoms.png" width={300} height={400} alt="Decorative Left" className="hidden md:block"/>
+        <Image src="/atoms.webp" width={300} height={400} alt="Decorative Left" className="hidden md:block"/>
       </motion.div>
 
       {/* Heading */}
@@ -171,7 +171,7 @@ export default function PremiumFAQ() {
         transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
         className="absolute bottom-25 -right-10"
       >
-        <Image src="/atoms.png" width={300} height={400} alt="Decorative Right" className="hidden md:block" />
+        <Image src="/atoms.webp" width={300} height={400} alt="Decorative Right" className="hidden md:block" />
       </motion.div>
 
     </section>

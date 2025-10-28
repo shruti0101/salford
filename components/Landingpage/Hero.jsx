@@ -8,13 +8,13 @@ const Hero = () => {
       {/* ✅ Desktop Background Image */}
       <div
         className="hidden md:block absolute inset-0 bg-center bg-cover mt-10"
-        style={{ backgroundImage: "url(/herobannerfinal.jpg)" }}
+        style={{ backgroundImage: "url(/herobannerfinal.webp)" }}
       ></div>
 
       {/* ✅ Mobile Background Image with Text */}
       <div
         className="block md:hidden absolute inset-0 bg-center bg-cover bg-no-repeat flex flex-col justify-center items-center text-center px-6"
-        style={{ backgroundImage: "url(/mobbanner.png)" }}
+        style={{ backgroundImage: "url(/mobbanner.webp)" }}
       >
         <div className="block md:hidden p-4 mt-7 rounded-xl">
           <h2 className="text-white text-4xl  font-semibold">

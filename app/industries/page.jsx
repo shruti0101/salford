@@ -5,7 +5,7 @@ import CTA from "@/components/Landingpage/Cta";
 
 const industries = [
   { image: "/industry/1.webp", name: "Agriculture" },
-  // { image: "/industry/3.jpeg", name: "Oil & Gas Industry" },
+  // { image: "/industry/3.webp", name: "Oil & Gas Industry" },
   { image: "/industry/4.webp", name: "Plastics & Polymers" },
   { image: "/industry/5.webp", name: "Building And Homes" },
   { image: "/industry/8.webp", name: "Laminates" },

@@ -8,13 +8,13 @@ const Page = () => {
       <div
         className="relative w-full px-8 bg-cover bg-center h-[50vh] md:h-[90vh] flex flex-col items-start justify-center overflow-hidden"
         style={{
-          backgroundImage: "url('/whychoosebg.png')",
+          backgroundImage: "url('/whychoosebg.webp')",
         }}
       >
         <div className="absolute inset-0 bg-black/30"></div>
 
         <div className="relative mt-20 z-10 text-white max-w-4xl">
-          <h1 className="text-3xl tracking-wide md:text-7xl px-9 font-extrabold tracking-tight drop-shadow-lg">
+          <h1 className="text-4xl tracking-wide md:text-7xl px-9 font-extrabold tracking-tight drop-shadow-lg">
             Contact Us
           </h1>
       

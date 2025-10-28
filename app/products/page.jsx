@@ -111,7 +111,7 @@ export default function ProductsPage() {
       {/* ===== Hero Banner ===== */}
       <div
         className="relative w-full h-[40vh] sm:h-[55vh] md:h-[80vh] bg-cover bg-center flex items-center justify-center"
-        style={{ backgroundImage: "url('/whychoosebg.png')" }}
+        style={{ backgroundImage: "url('/whychoosebg.webp')" }}
       >
     
     

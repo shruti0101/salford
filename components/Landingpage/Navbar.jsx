@@ -33,7 +33,7 @@ export default function Navbar() {
         <Link href="/">
           <div className="flex items-center flex-shrink-0">
             <Image
-              src="/about/logo.jpg"
+              src="/logo.webp"
               alt="Logo"
               width={90}
               height={65}
@@ -120,7 +120,7 @@ export default function Navbar() {
           />
           <div className="relative w-3/4 max-w-xs bg-[#00537B] text-white h-full shadow-lg p-6 flex flex-col animate-slideIn">
             <div className="flex justify-between items-center mb-6">
-              <Image src="/about/logo.jpg" alt="Logo" width={80} height={45} />
+              <Image src="/logo.webp" alt="Logo" width={80} height={45} />
               <button onClick={() => setMobileOpen(false)}>
                 <X size={26} />
               </button>
@@ -158,9 +158,7 @@ export default function Navbar() {
               ))}
 
               <div className="mt-6 flex flex-col gap-3">
-                <button className="w-full bg-[#F7C600] text-black py-2 rounded-full font-semibold hover:bg-[#FFD25B] transition">
-                  Request a Quote
-                </button>
+            
                 <Link
                   href="/contact-us"
                   className="cursor-pointer w-full text-center bg-white text-[#00537B] py-2 rounded-full font-semibold hover:bg-gray-100 transition"
