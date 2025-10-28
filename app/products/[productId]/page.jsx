@@ -28,15 +28,15 @@ export default function ProductPage({ params }) {
       </Head>
 
       {/* 🟨 Title */}
-      <section className="w-full text-center py-10 md:py-16">
-        <h1 className="text-2xl sm:text-3xl mt-29 md:text-6xl font-bold text-black">
+      <section className="w-full text-center py-5 md:py-16">
+        <h1 className="text-2xl sm:text-3xl mt-25  md:text-6xl font-bold text-black">
           {product?.name}
         </h1>
       </section>
 
       {/* 🏭 Product Banner */}
       {product?.banner && (
-        <section className="relative w-full h-[35vh] sm:h-[50vh] md:h-[75vh] overflow-hidden rounded-lg">
+        <section className="relative  w-full h-[35vh] sm:h-[50vh] md:h-[75vh] overflow-hidden rounded-lg">
           <Image
             src={product.banner}
             alt={`${product.name} Banner`}

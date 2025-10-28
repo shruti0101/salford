@@ -100,19 +100,7 @@ export default function ProductsPage() {
 
 
      
-        <div className="text-center bg-[#D4E6FA] text-xs sm:text-sm text-black ">
-          <p>
-            Website Designed By Promozione Branding Pvt. Ltd.{" "}
-            <a
-              className="text-blue-400 underline"
-              href="https://www.promozionebranding.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Website Designing Company
-            </a>
-          </p>
-        </div>
+      
     </>
 
     
@@ -165,7 +153,19 @@ export default function ProductsPage() {
 
 
 
-
+  <div className="text-center bg-[#D4E6FA] text-xs sm:text-sm text-black ">
+          <p>
+            Website Designed By Promozione Branding Pvt. Ltd.{" "}
+            <a
+              className="text-blue-400 underline"
+              href="https://www.promozionebranding.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Website Designing Company
+            </a>
+          </p>
+        </div>
 
 
      
