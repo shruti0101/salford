@@ -83,7 +83,7 @@ const industries = [
                   <h3 className="text-sm md:text-xl font-semibold text-[#004C91] group-hover:text-[#00e5ff] transition-colors duration-300">
                     {industry.name}
                   </h3>
-                  <p className="max-w-md text-sm md:text-base">{industry.desc}</p>
+                  <p className="max-w-md text-sm">{industry.desc}</p>
                 </div>
               </Link>
             ))}

@@ -46,7 +46,7 @@ export default function ProductsPage() {
   const renderSection = (title, subtitle, description, products) => (
     <section className="relative w-full bg-gradient-to-b from-white via-[#E6F0FA] to-[#D0E4FA] overflow-hidden">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_#4A90E2_0%,_transparent_40%)] opacity-20 pointer-events-none" />
-      <div className="relative max-w-7xl mx-auto px-10 md:px-16 space-y-6 py-20">
+      <div className="relative max-w-7xl mx-auto px-4 md:px-10 md:px-16 space-y-6 py-20">
         <h2 className="text-4xl md:text-5xl font-extrabold text-black tracking-tight">{title}</h2>
         <p className="text-xl text-black font-medium">{subtitle}</p>
         <div className="text-black text-xl leading-relaxed space-y-4">

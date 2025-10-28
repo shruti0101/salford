@@ -9,7 +9,7 @@ export default function ProductPage({ params }) {
   const { productId } = use(params);
   const allProducts = categories.flatMap((c) => c.products);
   const product = allProducts.find((p) => p.id === productId);
-  const [isFormOpen, setIsFormOpen] = useState(false);
+  
 
   if (!product) {
     return (
@@ -179,60 +179,72 @@ export default function ProductPage({ params }) {
       </section>
 
       {/* 🧩 Related Products */}
-      <section className="mt-16 md:mt-20 px-4 sm:px-8 mb-16">
-        <h2 className="text-2xl sm:text-3xl md:text-5xl font-serif font-semibold text-[#014AAB] text-center border-b pb-2 inline-block">
-          Related Items
-        </h2>
+   <section className="mt-16 md:mt-20 px-4 sm:px-8 mb-16">
+  <h2 className="text-2xl sm:text-3xl md:text-5xl font-serif font-semibold text-[#014AAB] text-center border-b pb-2 inline-block">
+    Related Items
+  </h2>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 mt-10">
-          {(() => {
-            const categoryObj = categories.find((c) =>
-              c.products.some((p) => p.id === product.id)
-            );
-            const related = categoryObj
-              ? categoryObj.products.filter((p) => p.id !== product.id)
-              : [];
+  {(() => {
+    const categoryObj = categories.find((c) =>
+      c.products.some((p) => p.id === product.id)
+    );
 
-            return related.slice(0, 4).map((relatedProduct) => (
-              <div
-                key={relatedProduct.id}
-                className="group flex flex-col rounded-2xl overflow-hidden bg-white shadow-md hover:shadow-xl transform transition-all duration-300 hover:-translate-y-2"
-              >
-                <div className="p-6 flex flex-col flex-grow bg-[#B6E0EC]/40">
-                  <h3 className="text-xl sm:text-2xl font-semibold mb-4 text-black group-hover:text-[#0082C8] transition-colors duration-300">
-                    {relatedProduct.name}
-                  </h3>
+    const related = categoryObj
+      ? categoryObj.products.filter((p) => p.id !== product.id)
+      : [];
 
-                  {relatedProduct.model && (
-                    <p className="text-sm text-gray-500 mb-3">
-                      {relatedProduct.model}
-                    </p>
-                  )}
-
-                  <div className="space-y-2 text-sm md:text-base text-black">
-                    {(product.excerpt || [])
-                      .filter((b) => b.type === "p")
-                      .map((block, idx) => (
-                        <p key={idx} className="leading-relaxed">
-                          {block.text}
-                        </p>
-                      ))}
-                  </div>
-
-                  <a
-                    href={`/products/${relatedProduct.id}`}
-                    className="mt-6 inline-flex items-center justify-center gap-2 px-5 py-2 bg-gradient-to-r from-[#00537B] to-[#0082C8] text-white rounded-lg font-medium hover:scale-105 transition-transform duration-300"
-                  >
-                    View Details <ArrowUpRight className="w-4 h-4" />
-                  </a>
-
-                  <span className="block h-1 w-0 bg-gradient-to-r from-[#8AB0C2] to-[#0082C8] rounded-full mt-4 transition-all duration-300 group-hover:w-full mx-auto"></span>
-                </div>
-              </div>
-            ));
-          })()}
+    if (!related.length) {
+      return (
+        <div className="mt-10 text-center text-gray-500 text-lg">
+          No related items found in this category.
         </div>
-      </section>
+      );
+    }
+
+    return (
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 mt-10">
+        {related.slice(0, 4).map((relatedProduct) => (
+          <div
+            key={relatedProduct.id}
+            className="group flex flex-col rounded-2xl overflow-hidden bg-white shadow-md hover:shadow-xl transform transition-all duration-300 hover:-translate-y-2"
+          >
+            <div className="p-6 flex flex-col flex-grow bg-[#B6E0EC]/40">
+              <h3 className="text-xl sm:text-2xl font-semibold mb-4 text-black group-hover:text-[#0082C8] transition-colors duration-300">
+                {relatedProduct.name}
+              </h3>
+
+              {relatedProduct.model && (
+                <p className="text-sm text-gray-500 mb-3">
+                  {relatedProduct.model}
+                </p>
+              )}
+
+              <div className="space-y-2 text-sm md:text-base text-black">
+                {(relatedProduct.excerpt || [])
+                  .filter((b) => b.type === "p")
+                  .map((block, idx) => (
+                    <p key={idx} className="leading-relaxed">
+                      {block.text}
+                    </p>
+                  ))}
+              </div>
+
+              <a
+                href={`/products/${relatedProduct.id}`}
+                className="mt-6 inline-flex items-center justify-center gap-2 px-5 py-2 bg-gradient-to-r from-[#00537B] to-[#0082C8] text-white rounded-lg font-medium hover:scale-105 transition-transform duration-300"
+              >
+                View Details <ArrowUpRight className="w-4 h-4" />
+              </a>
+
+              <span className="block h-1 w-0 bg-gradient-to-r from-[#8AB0C2] to-[#0082C8] rounded-full mt-4 transition-all duration-300 group-hover:w-full mx-auto"></span>
+            </div>
+          </div>
+        ))}
+      </div>
+    );
+  })()}
+</section>
+
     </>
   );
 }
