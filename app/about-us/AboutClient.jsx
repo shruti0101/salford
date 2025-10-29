@@ -123,7 +123,7 @@ const page = () => {
   const images = [
     "/industry/9.webp",
     "/about/global1.webp",
-    "/about/coatings.avif",
+    "/industry/11.webp",
     "/industry/4.webp",
 
     "/industry/10.avif",

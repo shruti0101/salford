@@ -4,6 +4,7 @@ import Image from "next/image";
 import Head from "next/head";
 import { ArrowUpRight } from "lucide-react";
 
+
 export default function ProductPage({ params }) {
 const { productId } = params;
 
