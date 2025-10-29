@@ -36,6 +36,7 @@ export default function ContactForm({ isOpen, onClose }) {
   };
 
   const countries = [
+    "select country",
     "India",
     "United States",
     "United Kingdom",
@@ -66,17 +67,18 @@ export default function ContactForm({ isOpen, onClose }) {
             ✕
           </button>
 
-          <h2 className="text-center text-2xl sm:text-3xl font-semibold text-white tracking-wide">
+          <h2 className="text-center text-2xl  font-semibold text-white tracking-wide">
             Get In Touch With Us
           </h2>
-          <div className="w-24 h-[3px] bg-gradient-to-r from-[#00C9FF] to-[#92FE9D] mx-auto mt-3 mb-8 rounded-full"></div>
+          <div className="w-24 h-[3px] bg-gradient-to-r from-[#00C9FF] to-[#92FE9D] mx-auto mt-3 mb-5 rounded-full"></div>
 
           {!success ? (
-            <form method="post" ref={formRef} onSubmit={handleSubmit} className="space-y-5">
+            <form method="post" ref={formRef} onSubmit={handleSubmit} className="space-y-3">
               <input type="hidden" name="_subject" value="New Product Enquiry" />
               <input type="hidden" name="_template" value="table" />
               <input type="hidden" name="product" value="Enquiry From Website" />
               <input type="hidden" name="_captcha" value="false" />
+                    <input type="hidden" name="_nosponsor" value="true" />
 
               <input
                 type="text"
@@ -107,13 +109,13 @@ export default function ContactForm({ isOpen, onClose }) {
 
               {/* ✅ Country Dropdown */}
               <select
+              
                 name="country"
+                defaultValue=""
                 className="w-full px-4 py-3 bg-white/10 border border-white/30 rounded-lg text-white focus:ring-2 focus:ring-[#00C9FF] focus:border-transparent transition"
                 required
               >
-                <option value="" disabled selected className="text-gray-400">
-                  Select Country
-                </option>
+                
                 {countries.map((country, idx) => (
                   <option key={idx} value={country} className="text-black">
                     {country}
@@ -130,7 +132,7 @@ export default function ContactForm({ isOpen, onClose }) {
               <button
                 type="submit"
                 disabled={loading}
-                className="w-full py-3 bg-gradient-to-r from-[#00C9FF] to-[#0077E6] hover:from-[#0077E6] hover:to-[#00C9FF] transition-all duration-300 rounded-lg font-semibold text-white text-base shadow-lg shadow-[#00C9FF]/30"
+                className="w-full py-2 bg-gradient-to-r from-[#00C9FF] to-[#0077E6] hover:from-[#0077E6] hover:to-[#00C9FF] transition-all duration-300 rounded-lg font-semibold text-white text-base shadow-lg shadow-[#00C9FF]/30"
               >
                 {loading ? "Sending..." : "Send Message"}
               </button>
