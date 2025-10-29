@@ -1,23 +1,64 @@
 "use client";
-import React from "react";
-import Image from "next/image";
+import React, { useRef, useState } from "react";
 
 export default function ContactForm({ isOpen, onClose }) {
+  const formRef = useRef(null);
+  const [loading, setLoading] = useState(false);
+  const [success, setSuccess] = useState(false);
+  const [error, setError] = useState("");
+
   if (!isOpen) return null;
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+    setError("");
+
+    const formData = new FormData(formRef.current);
+
+    try {
+      const response = await fetch("https://formsubmit.co/ajax/sales@aanyaenterprise.com", {
+        method: "POST",
+        body: formData,
+      });
+
+      if (response.ok) {
+        setSuccess(true);
+        formRef.current.reset();
+      } else {
+        setError("Something went wrong. Please try again.");
+      }
+    } catch (err) {
+      setError("Network error. Please try again.");
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const countries = [
+    "India",
+    "United States",
+    "United Kingdom",
+    "Germany",
+    "Canada",
+    "Australia",
+    "United Arab Emirates",
+    "France",
+    "Italy",
+    "Singapore",
+    "China",
+    "Japan",
+    "South Korea",
+    "Brazil",
+    "South Africa",
+  ];
 
   return (
     <div className="fixed inset-0 flex items-center justify-center bg-black/40 backdrop-blur-xs z-50 px-4">
-      {/* Form Card */}
-      <div
-        className="relative rounded-3xl shadow-2xl overflow-hidden w-full max-w-lg text-white"
-        style={{ backgroundImage: "url(/home/eco3-1024x745.webp)" }}
-      >
-        {/* Overlay */}
+      <div className="relative rounded-3xl shadow-2xl overflow-hidden w-full max-w-lg text-white">
         <div className="absolute inset-0 bg-gradient-to-br from-black/70 via-black/50 to-[#004aad]/60 backdrop-blur-sm"></div>
 
-        {/* Inner Content */}
         <div className="relative p-8 sm:p-10 z-10">
-          {/* Close Button */}
           <button
             onClick={onClose}
             className="absolute top-4 right-4 text-white/70 hover:text-red-400 text-2xl transition"
@@ -25,120 +66,88 @@ export default function ContactForm({ isOpen, onClose }) {
             ✕
           </button>
 
-          {/* Title */}
           <h2 className="text-center text-2xl sm:text-3xl font-semibold text-white tracking-wide">
             Get In Touch With Us
           </h2>
           <div className="w-24 h-[3px] bg-gradient-to-r from-[#00C9FF] to-[#92FE9D] mx-auto mt-3 mb-8 rounded-full"></div>
 
-          {/* Form */}
-          <form
-            className="space-y-5"
-            action="https://formsubmit.co/sales@aanyaenterprise.com"
-            method="POST"
-          >
-            {/* Hidden fields */}
-            <input type="hidden" name="_captcha" value="false" />
-            <input type="hidden" name="_subject" value="New Product Enquiry" />
-            <input type="hidden" name="_template" value="table" />
-            <input type="hidden" name="product" value="Enquiry From Website" />
-            <input type="hidden" name="_nosponsor" value="true" />
+          {!success ? (
+            <form method="post" ref={formRef} onSubmit={handleSubmit} className="space-y-5">
+              <input type="hidden" name="_subject" value="New Product Enquiry" />
+              <input type="hidden" name="_template" value="table" />
+              <input type="hidden" name="product" value="Enquiry From Website" />
+              <input type="hidden" name="_captcha" value="false" />
 
-            {/* Name + Machine */}
-            <div className="flex flex-col sm:flex-row gap-4">
               <input
                 type="text"
+                name="name"
                 placeholder="Your Name"
-                className="flex-1 px-4 py-3 bg-white/10 border border-white/30 rounded-lg text-white placeholder-white/70 focus:ring-2 focus:ring-[#00C9FF] focus:border-transparent transition"
+                className="w-full px-4 py-3 bg-white/10 border border-white/30 rounded-lg text-white placeholder-white/70 focus:ring-2 focus:ring-[#00C9FF] focus:border-transparent transition"
                 required
               />
 
-              {/* <select
-                defaultValue=""
-                className="flex-1 px-4 py-3 bg-white/10 border border-white/30 rounded-lg text-white placeholder-white/70 focus:ring-2 focus:ring-[#00C9FF] focus:border-transparent transition"
-                required
-              >
-                <option value="" disabled hidden>
-                  Select Product
-                </option>
-                <option className="text-black" value="Paper Cup Making Machine">
-                  Paper Cup Making Machine
-                </option>
-                <option className="text-black" value="Paper Die Cutting Machine">
-                  Paper Die Cutting Machine
-                </option>
-                <option
-                  className="text-black"
-                  value="Paper Plate Making Machine"
-                >
-                  Paper Plate Making Machine
-                </option>
-                <option
-                  className="text-black"
-                  value="Bio-degradable Bag Making Machine"
-                >
-                  Bio-degradable Bag Making Machine
-                </option>
-                <option className="text-black" value="Flexoprinting Machine">
-                  Flexoprinting Machine
-                </option>
-                <option
-                  className="text-black"
-                  value="Non Woven Bag Making Machines"
-                >
-                  Non Woven Bag Making Machines
-                </option>
-                <option
-                  className="text-black"
-                  value="Offset Bag Printing Machine"
-                >
-                  Offset Bag Printing Machine
-                </option>
-                <option className="text-black" value="Momo Making Machine">
-                  Momo Making Machine
-                </option>
-                <option className="text-black" value="Noodle Making Machine">
-                  Noodle Making Machine
-                </option>
-              </select> */}
-            </div>
-
-            {/* Phone */}
-            <div className="flex items-center gap-2 bg-white/10 border border-white/30 rounded-lg px-4 py-3 focus-within:ring-2 focus-within:ring-[#00C9FF] transition">
-           
               <input
                 type="tel"
+                name="phone"
                 maxLength={10}
                 minLength={10}
                 pattern="[0-9]{10}"
-                placeholder="Enter phone number"
-                className="flex-1 bg-transparent placeholder-white/70 text-white focus:outline-none px-2"
+                placeholder="Enter Phone Number"
+                className="w-full px-4 py-3 bg-white/10 border border-white/30 rounded-lg text-white placeholder-white/70 focus:ring-2 focus:ring-[#00C9FF] focus:border-transparent transition"
                 required
               />
+
+              <input
+                type="email"
+                name="email"
+                placeholder="Email"
+                className="w-full px-4 py-3 bg-white/10 border border-white/30 rounded-lg text-white placeholder-white/70 focus:ring-2 focus:ring-[#00C9FF] focus:border-transparent transition"
+                required
+              />
+
+              {/* ✅ Country Dropdown */}
+              <select
+                name="country"
+                className="w-full px-4 py-3 bg-white/10 border border-white/30 rounded-lg text-white focus:ring-2 focus:ring-[#00C9FF] focus:border-transparent transition"
+                required
+              >
+                <option value="" disabled selected className="text-gray-400">
+                  Select Country
+                </option>
+                {countries.map((country, idx) => (
+                  <option key={idx} value={country} className="text-black">
+                    {country}
+                  </option>
+                ))}
+              </select>
+
+              <textarea
+                name="message"
+                placeholder="Message"
+                className="w-full px-4 py-3 bg-white/10 border border-white/30 rounded-lg text-white placeholder-white/70 focus:ring-2 focus:ring-[#00C9FF] focus:border-transparent transition h-28 resize-none"
+              ></textarea>
+
+              <button
+                type="submit"
+                disabled={loading}
+                className="w-full py-3 bg-gradient-to-r from-[#00C9FF] to-[#0077E6] hover:from-[#0077E6] hover:to-[#00C9FF] transition-all duration-300 rounded-lg font-semibold text-white text-base shadow-lg shadow-[#00C9FF]/30"
+              >
+                {loading ? "Sending..." : "Send Message"}
+              </button>
+            </form>
+          ) : (
+            <div className="text-center text-white space-y-4">
+              <p className="text-lg font-semibold">✅ Message Sent Successfully!</p>
+              <button
+                onClick={() => setSuccess(false)}
+                className="bg-gradient-to-r from-[#00C9FF] to-[#0077E6] px-6 py-2 rounded-lg text-white"
+              >
+                Send Another
+              </button>
             </div>
+          )}
 
-            {/* Email */}
-            <input
-              type="email"
-              placeholder="Email"
-              className="w-full px-4 py-3 bg-white/10 border border-white/30 rounded-lg text-white placeholder-white/70 focus:ring-2 focus:ring-[#00C9FF] focus:border-transparent transition"
-              required
-            />
-
-            {/* Message */}
-            <textarea
-              placeholder="Message"
-              className="w-full px-4 py-3 bg-white/10 border border-white/30 rounded-lg text-white placeholder-white/70 focus:ring-2 focus:ring-[#00C9FF] focus:border-transparent transition h-28 resize-none"
-            ></textarea>
-
-            {/* Submit */}
-            <button
-              type="submit"
-              className="w-full py-3 bg-gradient-to-r from-[#00C9FF] to-[#0077E6] hover:from-[#0077E6] hover:to-[#00C9FF] transition-all duration-300 rounded-lg font-semibold text-white text-base shadow-lg shadow-[#00C9FF]/30"
-            >
-              Send Message
-            </button>
-          </form>
+          {error && <p className="text-red-400 text-center mt-3">{error}</p>}
         </div>
       </div>
     </div>

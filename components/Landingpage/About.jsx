@@ -36,8 +36,9 @@ export default function AboutUs() {
       </h1>
 
       <p className="text-lg text-black leading-relaxed mb-4">
-        <strong>Salford</strong> is a distinguished international manufacturer
-        and manufacturer of <strong>Titanium Dioxide (TiO₂),</strong> dedicated to
+                         <a href="/"className="font-bold text-[#03a9f4] underline">Salford</a>{" "}
+ is a distinguished international 
+         manufacturer of <strong>Titanium Dioxide (TiO₂),</strong> dedicated to
         supporting world's fast-growing industrial landscape. We connect
          businesses with world-class titanium dioxide manufacturers
         abroad, providing consistent, high-performance raw materials.
@@ -55,7 +56,8 @@ export default function AboutUs() {
       </p>
 
       <p className="text-lg text-black leading-relaxed mb-6">
-        As demand in  all over world continues to expand, <strong>Salford</strong>{" "}
+        As demand in  all over world continues to expand,                   <a href="/"className="font-bold text-[#03a9f4] underline">Salford</a>{" "}
+{" "}
         ensures businesses are equipped with the right grades and
         specifications to meet production goals. With a focus on reliability
         and global standards, we are your trusted{" "}

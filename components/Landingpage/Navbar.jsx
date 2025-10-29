@@ -23,7 +23,7 @@ export default function Navbar() {
     },
     { label: "Industries", link: "/industries" },
     { label: "Applications", link: "/applications" },
-    // { label: "News & Events", link: "/news-events" },  
+    { label: "News & Events", link: "/news-events" },  
   ];
 
   return (
@@ -159,6 +159,12 @@ export default function Navbar() {
 
               <div className="mt-6 flex flex-col gap-3">
             
+
+ <button onClick={() => setIsFormOpen(true)} className="relative px-6 py-3 rounded-full font-semibold bg-gradient-to-r from-[#8AB0C2] to-[#0082C8] text-white shadow-lg overflow-hidden group hover:scale-105 transition-transform duration-300">
+            <span className="absolute inset-0 bg-white opacity-10 -translate-x-full group-hover:translate-x-0 transform transition-transform duration-500"></span>
+            Request a Quote
+          </button>
+
                 <Link
                   href="/contact-us"
                   className="cursor-pointer w-full text-center bg-white text-[#00537B] py-2 rounded-full font-semibold hover:bg-gray-100 transition"

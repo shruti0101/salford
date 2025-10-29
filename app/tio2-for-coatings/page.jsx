@@ -78,7 +78,7 @@ export default function ProductsPage() {
         style={{ backgroundImage: "url('/category/coating.webp')" }}
       />
 
-      {/* ===== Main Content Section ===== */}
+
       {renderSection(
         "Titanium Dioxide Solutions for Paints & Coatings",
         "High-Performance Pigments for Superior Coverage, Gloss, and Durability",

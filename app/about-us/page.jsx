@@ -27,7 +27,7 @@ import {
   Leaf,
   Rocket,
   Handshake,
-  Cpu
+  Cpu,
 } from "lucide-react";
 const page = () => {
   const [activeTab, setActiveTab] = useState("vision");
@@ -51,25 +51,24 @@ const page = () => {
     },
   ];
 
-const innovationPoints = [
-  {
-    icon: <FlaskConical size={28} />,
-    text: "Next-generation pigment formulations with higher opacity and dispersion.",
-  },
-  {
-    icon: <Recycle size={28} />,
-    text: "Low-carbon manufacturing technologies.",
-  },
-  {
-    icon: <Zap size={28} />,
-    text: "Customized TiO₂ grades for advanced industries like electronics, green coatings, and food applications.",
-  },
-  {
-    icon: <Cpu size={28} />,
-    text: "AI-driven process optimization ensuring consistency, efficiency, and reduced production variability.",
-  },
-];
-
+  const innovationPoints = [
+    {
+      icon: <FlaskConical size={28} />,
+      text: "Next-generation pigment formulations with higher opacity and dispersion.",
+    },
+    {
+      icon: <Recycle size={28} />,
+      text: "Low-carbon manufacturing technologies.",
+    },
+    {
+      icon: <Zap size={28} />,
+      text: "Customized TiO₂ grades for advanced industries like electronics, green coatings, and food applications.",
+    },
+    {
+      icon: <Cpu size={28} />,
+      text: "AI-driven process optimization ensuring consistency, efficiency, and reduced production variability.",
+    },
+  ];
 
   const tabContent = {
     values: {
@@ -89,7 +88,9 @@ const innovationPoints = [
           supported by:
           <ul className="mt-4 space-y-2 list-disc list-inside text-left">
             <li>Uncompromising quality assurance and certification</li>
-            <li>Efficient logistics and timely supply across in all over world</li>
+            <li>
+              Efficient logistics and timely supply across in all over world
+            </li>
             <li>Strong technical support and product expertise</li>
             <li>Sustainable and environmentally responsible operations</li>
           </ul>
@@ -149,12 +150,11 @@ const innovationPoints = [
           </h1>
           <p className="text-white mt-4 md:max-w-2xl text-sm md:text-lg md:leading-relaxed">
             Partner with a Global Leader Today If you are seeking a Titanium
-            Dioxide Manufacturer in Germany 
-            Contact our team today to discuss your requirements, request product
-            samples, or explore strategic partnership opportunities. Together,
-            let’s build a sustainable, brighter future for
-            industry—powered by world-class titanium dioxide and the trusted
-            partnership of Salford.
+            Dioxide Manufacturer in Germany Contact our team today to discuss
+            your requirements, request product samples, or explore strategic
+            partnership opportunities. Together, let’s build a sustainable,
+            brighter future for industry—powered by world-class titanium dioxide
+            and the trusted partnership of Salford.
           </p>
         </div>
       </div>
@@ -181,12 +181,13 @@ const innovationPoints = [
               Empowering Industries Through Global Titanium Dioxide Expertise
             </h3>
             <p className="text-black text-lg leading-relaxed">
-              Salford stands as a trusted name in the global titanium dioxide
+                                <a href="/"className="font-bold text-[#03a9f4] underline">Salford</a>{" "}
+ stands as a trusted name in the global titanium dioxide
               market—recognized as a leading Titanium Dioxide Manufacturer in
-              Germany and a prominent titanium dioxide manufacturer in all over world. With a
-              deep-rooted commitment to excellence, innovation, and reliability,
-              we connect world-class chemical manufacturing expertise with
-              world rapidly advancing industrial ecosystem.
+              Germany and a prominent titanium dioxide manufacturer in all over
+              world. With a deep-rooted commitment to excellence, innovation,
+              and reliability, we connect world-class chemical manufacturing
+              expertise with world rapidly advancing industrial ecosystem.
             </p>
             <p className="text-black text-lg leading-relaxed">
               Our journey began with a clear purpose: to bridge the gap between
@@ -224,24 +225,25 @@ const innovationPoints = [
               <div className="space-y-6 max-w-2xl text-lg md:text-xl text-black">
                 <p>
                   As a Titanium Dioxide Manufacturer in Germany,{" "}
-                  <span className="font-bold text-[#03a9f4]">Salford</span>{" "}
+                  <a href="/" className="font-bold text-[#03a9f4] underline">
+                    Salford
+                  </a>{" "}
                   embodies the precision, innovation, and quality control
                   standards that define German engineering.
                 </p>
                 <p>
                   Our expertise in titanium dioxide production allows us to
-                  supply both{" "}
-                  <span className="font-semibold text-[#03a9f4]">Rutile</span>{" "}
-                  and{" "}
-                  <span className="font-semibold text-[#03a9f4]">Anatase</span>{" "}
-                  grades, meeting the diverse requirements of global industries.
+                  supply , different grades, meeting the diverse requirements of
+                  global industries.
                 </p>
                 <p>
                   From Germany, our operations extend across
                   continents—empowering manufacturers in Europe, the Middle
                   East, and Asia.{" "}
-                  <span className="font-bold text-[#03a9f4]">in all over world</span> has
-                  become a cornerstone of our global strategy.
+                  <span className="font-bold text-[#03a9f4]">
+                    in all over world
+                  </span>{" "}
+                  has become a cornerstone of our global strategy.
                 </p>
               </div>
 
@@ -348,10 +350,11 @@ const innovationPoints = [
                   </h4>
                 </div>
                 <p className="text-black text-lg leading-relaxed">
-                  As a leading titanium dioxide manufacturer in all over world, we understand
-                  the unique demands of Global manufacturers—cost-effectiveness,
-                  performance, and consistency. Our on-ground presence ensures
-                  timely deliveries and personalized support.
+                  As a leading titanium dioxide manufacturer in all over world,
+                  we understand the unique demands of Global
+                  manufacturers—cost-effectiveness, performance, and
+                  consistency. Our on-ground presence ensures timely deliveries
+                  and personalized support.
                 </p>
               </div>
 
@@ -451,10 +454,9 @@ const innovationPoints = [
         </div>
       </section>
 
+      {/* cta */}
 
-{/* cta */}
-
-  <Cta></Cta>
+      <Cta></Cta>
       {/* section 4 */}
 
       <section className="relative py-20 bg-[#F7F5C9]/20  overflow-hidden">
@@ -490,9 +492,9 @@ const innovationPoints = [
                 emissions, and conserve resources.
                 <br />
                 <br />
-                As a titanium dioxide manufacturer in all over world, we extend the same
-                responsibility through ethical sourcing, safe transportation,
-                and regulatory compliance.
+                As a titanium dioxide manufacturer in all over world, we extend
+                the same responsibility through ethical sourcing, safe
+                transportation, and regulatory compliance.
               </p>
 
               <h4 className="text-2xl font-semibold text-[#003a70] mb-6">
@@ -512,8 +514,11 @@ const innovationPoints = [
               </ul>
 
               <p className="mt-8 text-gray-800 font-medium text-lg">
-                For <span className="text-[#03a9f4] font-bold">Salford</span>,
-                sustainability is not just a policy — it’s a commitment to
+                For{" "}
+                <a href="/" className="font-bold text-[#03a9f4] underline">
+                  Salford
+                </a>{" "}
+                , sustainability is not just a policy — it’s a commitment to
                 global well-being and industrial balance.
               </p>
             </div>
@@ -533,7 +538,8 @@ const innovationPoints = [
                 Innovation: The Salford Edge
               </h3>
               <p className="text-gray-700 text-lg leading-relaxed mb-8">
-                Salford continues to push the boundaries of titanium dioxide
+                                  <a href="/"className="font-bold text-[#03a9f4] underline">Salford</a>{" "}
+ continues to push the boundaries of titanium dioxide
                 performance through innovation. Our R&D initiatives in Germany
                 focus on developing smarter, more efficient pigment technologies
                 that redefine TiO₂ excellence.
@@ -553,17 +559,15 @@ const innovationPoints = [
 
               <p className="mt-10 text-gray-800 font-medium text-lg">
                 This innovation mindset ensures that every{" "}
-                <span className="text-[#03a9f4] font-semibold">Salford</span>{" "}
-                product delivered to in all over world represents the latest in global TiO₂
-                technology — keeping our partners ahead in both quality and
-                sustainability.
+                              <a href="/"className="font-bold text-[#03a9f4] underline">Salford</a>{" "}
+
+                product delivered to in all over world represents the latest in
+                global TiO₂ technology — keeping our partners ahead in both
+                quality and sustainability.
               </p>
             </div>
           </motion.div>
         </div>
-
-
-      
       </section>
     </>
   );

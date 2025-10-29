@@ -27,8 +27,12 @@ const CTA = () => {
 
         <p className="text-[clamp(0.9rem,2.5vw,1.125rem)] leading-relaxed max-w-3xl text-gray-100">
           If you are seeking a Titanium Dioxide Manufacturer in Germany with the
-          credibility of a trusted titanium dioxide manufacturer across the world,{" "}
-          <span className="font-semibold text-white">Salford</span> is your ideal partner.
+          credibility of a trusted titanium dioxide manufacturer across the
+          world,{" "}
+          <a href="/" className="font-bold text-[#03a9f4] underline">
+            Salford
+          </a>{" "}
+          is your ideal partner.
           <br className="hidden sm:block" />
           Contact our team today to discuss your requirements, request product
           samples, or explore strategic partnership opportunities.
@@ -36,7 +40,9 @@ const CTA = () => {
           Together, let’s build a sustainable, brighter future for the global
           industry — powered by world-class titanium dioxide and the trusted
           partnership of{" "}
-          <span className="font-semibold text-white">Salford</span>.
+          <a href="/" className="font-bold text-[#03a9f4] underline">
+            Salford
+          </a>{" "}
         </p>
 
         <Link

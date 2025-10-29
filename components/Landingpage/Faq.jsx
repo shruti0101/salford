@@ -95,7 +95,7 @@ export default function PremiumFAQ() {
   };
 
   return (
-    <section className="relative bg-center bg-contain py-24 px-6 lg:px-12 overflow-hidden">
+    <section className="relative bg-center bg-contain py-8 md:py-20 px-6 lg:px-12 overflow-hidden">
       {/* Left Floating Image */}
       <motion.div
         initial={{ y: 0 }}
@@ -107,7 +107,7 @@ export default function PremiumFAQ() {
       </motion.div>
 
       {/* Heading */}
-      <div className="max-w-5xl mx-auto text-center mb-16 relative z-10">
+      <div className="max-w-5xl mx-auto text-center mb-7 relative z-10">
         <h2 className="text-3xl md:text-4xl font-extrabold text-black tracking-tight">
           Frequently Asked Questions
         </h2>
@@ -117,7 +117,7 @@ export default function PremiumFAQ() {
       </div>
 
       {/* FAQ List */}
-      <div className="max-w-4xl mx-auto space-y-4 relative z-10">
+      <div className="max-w-4xl mx-auto space-y-3 relative z-10">
         {faqs.map((faq, index) => (
           <motion.div
             key={index}
@@ -128,7 +128,7 @@ export default function PremiumFAQ() {
           >
             <button
               onClick={() => toggleFAQ(index)}
-              className="w-full flex justify-between items-center px-6 py-4 text-left text-xl font-medium text-black hover:bg-[#1B5AA2]/20 hover:text-[#1B5AA2] transition-colors"
+              className="w-full flex justify-between items-center px-6 py-2 md:py-4 text-left text-md md:text-xl font-medium text-black hover:bg-[#1B5AA2]/20 hover:text-[#1B5AA2] transition-colors"
             >
               {faq.question}
               {openIndex === index ? (

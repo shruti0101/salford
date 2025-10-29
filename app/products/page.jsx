@@ -42,38 +42,39 @@ export default function ProductsPage() {
     </Link>
   );
 
-  const renderSection = (title, subtitle, description, products) => (
-
-    <>
-    
+  const renderSection = (
+    mainHeading,
+    title,
+    subtitle,
+    description,
+    products
+  ) => (
     <section className="relative w-full bg-gradient-to-b from-white via-[#E6F0FA] to-[#D0E4FA] overflow-hidden py-16 sm:py-20">
-      {/* Blue gradient overlay */}
-   
-
       {/* Top intro block */}
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 md:px-10 lg:px-16 space-y-6 mb-10">
         <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-gray-900">
-          A Trusted Partner in TiO₂ Excellence
+          {mainHeading}
         </h2>
         <h3 className="text-xl sm:text-2xl font-medium text-[#1E4B7A]">
-          Salford Titanium Dioxide: Premium Quality, Reliable Supply, Expert Support
+          Salford Titanium Dioxide: Premium Quality, Reliable Supply, Expert
+          Support
         </h3>
         <p className="text-base sm:text-lg md:text-xl text-gray-800 leading-relaxed">
-          For decades, Salford has built lasting partnerships by delivering Titanium
-          Dioxide (TiO₂) our customers can truly depend on. With nearly a century of
-          experience, we continue to provide world-class TiO₂ for coatings, plastics,
-          and laminate applications across the globe.
+          For decades, Salford has built lasting partnerships by delivering
+          Titanium Dioxide (TiO₂) our customers can truly depend on. With nearly
+          a century of experience, we continue to provide world-class TiO₂ for
+          coatings, plastics, and laminate applications across the globe.
           <br />
           <br />
-          As innovators of the chloride manufacturing process, we’ve refined it over
-          the years to extend product durability and minimize environmental impact.
-          Through collaboration and innovation, we help our customers develop superior
-          products powered by advanced TiO₂ technology.
+          As innovators of the chloride manufacturing process, we’ve refined it
+          over the years to extend product durability and minimize environmental
+          impact. Through collaboration and innovation, we help our customers
+          develop superior products powered by advanced TiO₂ technology.
           <br />
           <br />
-          Each Salford TiO₂ grade is managed by a dedicated Grade Guardian who ensures
-          it meets our strict quality standards. Only products that pass every test are
-          delivered to our customers.
+          Each Salford TiO₂ grade is managed by a dedicated Grade Guardian who
+          ensures it meets our strict quality standards. Only products that pass
+          every test are delivered to our customers.
         </p>
       </div>
 
@@ -94,16 +95,7 @@ export default function ProductsPage() {
           {products.map(renderProductCard)}
         </div>
       </div>
-
-      
     </section>
-
-
-     
-      
-    </>
-
-    
   );
 
   return (
@@ -112,14 +104,11 @@ export default function ProductsPage() {
       <div
         className="relative w-full h-[40vh] sm:h-[55vh] md:h-[80vh] bg-cover bg-center flex items-center justify-center"
         style={{ backgroundImage: "url('/whychoosebg.webp')" }}
-      >
-    
-    
-    
-      </div>
+      ></div>
 
       {/* ===== Product Sections ===== */}
       {renderSection(
+        "Empowering Plastics with TiO₂ Brilliance",
         "TiO₂ for Plastics",
         "High-performance grades for plastics, polymers, and masterbatches.",
         `Our TiO₂ grades deliver superior opacity, brightness, and UV resistance for high-quality plastic applications. 
@@ -129,6 +118,7 @@ export default function ProductsPage() {
       )}
 
       {renderSection(
+        "Enhancing Coatings with Superior Titanium Dioxide",
         "TiO₂ for Coatings",
         "Coating-grade TiO₂ designed for maximum opacity and durability.",
         `Ideal for architectural, industrial, and automotive coatings with superior gloss, color, and long-term performance. 
@@ -138,37 +128,28 @@ export default function ProductsPage() {
       )}
 
       {renderSection(
+        "Whitening Solutions for Laminates and Decorative Surfaces",
         "TiO₂ for Laminates",
         "Optical brighteners and whiteners for laminate applications.",
         `Designed for exceptional brightness and whiteness in decorative laminates, papers, and films. 
         Our TiO₂ products improve optical performance, ensuring high gloss and uniform color. 
         They are suitable for high-pressure laminates, melamine boards, decorative films, and specialty papers.`,
         laminatesProducts
-
-
-        
       )}
 
-
-
-
-
-  <div className="text-center bg-[#D4E6FA] text-xs sm:text-sm text-black ">
-          <p>
-            Website Designed By Promozione Branding Pvt. Ltd.{" "}
-            <a
-              className="text-blue-400 underline"
-              href="https://www.promozionebranding.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Website Designing Company
-            </a>
-          </p>
-        </div>
-
-
-     
+      <div className="text-center bg-[#D4E6FA] text-xs sm:text-sm text-black py-2">
+        <p>
+          Website Designed By Promozione Branding Pvt. Ltd.{" "}
+          <a
+            className="text-blue-400 underline"
+            href="https://www.promozionebranding.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Website Designing Company
+          </a>
+        </p>
+      </div>
     </>
   );
 }

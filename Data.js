@@ -104,55 +104,8 @@ export const categories = [
         },
       },
 
-      {
-        id: "salford-280",
-        name: "SALFORD 280",
-        metaTitle: "SALFORD 280",
-        metaDescription: "SALFORD 280",
-        banner: "/products/280.webp",
-        excerpt: [
-          {
-            type: "p",
-            text: "SALFORD 280 is a multi-purpose rutile titanium dioxide pigment with a blue tint tone, providing superior brightness, opacity, and durability across various PVC and plastic applications.",
-          },
-        ],
-        description: [
-          { type: "h2", text: "SALFORD 280" },
-          {
-            type: "p",
-            text: "SALFORD 280 is a multi-purpose, blue tint tone, sulphate-process, rutile titanium dioxide pigment, designed to give an outstanding combination of ease of dispersion, excellent optical properties and good durability in a wide range of pvc applications.",
-          },
-          { type: "h2", text: "Key Features – SALFORD 280" },
-          {
-            type: "ul",
-            items: [
-              "Lends colored systems a blue tone",
-              "Is readily wetted and dispersed",
-              "Imparts very high brightness and a blue tone",
-              "Delivers high tinting strength and opacity",
-              "Increases the durability of plastics used outdoors",
-            ],
-          },
-          {
-            type: "h2",
-            text: "Application - SALFORD 280 is recommended for evaluation in:",
-          },
-          {
-            type: "ul",
-            items: [
-              "Polyolefin masterbatch",
-              "Styrenics",
-              "ABS",
-              "Flexible PVC and plastisols",
-            ],
-          },
-        ],
-        pdfs: {
-          sds: "/sds2.pdf",
-          tds: "/products/280.pdf",
-        },
-      },
 
+      
       {
         id: "salford-260",
         name: "SALFORD 260",
@@ -201,7 +154,7 @@ export const categories = [
         },
       },
 
-      {
+  {
         id: "salford-269",
         name: "SALFORD 269",
         metaTitle: "SALFORD 269",
@@ -251,6 +204,59 @@ export const categories = [
           tds: "/products/269.pdf",
         },
       },
+
+
+      {
+        id: "salford-280",
+        name: "SALFORD 280",
+        metaTitle: "SALFORD 280",
+        metaDescription: "SALFORD 280",
+        banner: "/products/280.webp",
+        excerpt: [
+          {
+            type: "p",
+            text: "SALFORD 280 is a multi-purpose rutile titanium dioxide pigment with a blue tint tone, providing superior brightness, opacity, and durability across various PVC and plastic applications.",
+          },
+        ],
+        description: [
+          { type: "h2", text: "SALFORD 280" },
+          {
+            type: "p",
+            text: "SALFORD 280 is a multi-purpose, blue tint tone, sulphate-process, rutile titanium dioxide pigment, designed to give an outstanding combination of ease of dispersion, excellent optical properties and good durability in a wide range of pvc applications.",
+          },
+          { type: "h2", text: "Key Features – SALFORD 280" },
+          {
+            type: "ul",
+            items: [
+              "Lends colored systems a blue tone",
+              "Is readily wetted and dispersed",
+              "Imparts very high brightness and a blue tone",
+              "Delivers high tinting strength and opacity",
+              "Increases the durability of plastics used outdoors",
+            ],
+          },
+          {
+            type: "h2",
+            text: "Application - SALFORD 280 is recommended for evaluation in:",
+          },
+          {
+            type: "ul",
+            items: [
+              "Polyolefin masterbatch",
+              "Styrenics",
+              "ABS",
+              "Flexible PVC and plastisols",
+            ],
+          },
+        ],
+        pdfs: {
+          sds: "/sds2.pdf",
+          tds: "/products/280.pdf",
+        },
+      },
+
+
+    
 
       {
         id: "salford-288",
@@ -373,7 +379,7 @@ export const categories = [
         name: "SALFORD 296+",
         metaTitle: "SALFORD 296+",
         metaDescription: "SALFORD 296+",
-        banner: "/products/296+.webp",
+        banner: "/products/296.webp",
         excerpt: [
           {
             type: "p",
@@ -434,6 +440,115 @@ export const categories = [
     products: [
       // product 1
 
+           {
+        id: "salford-618",
+        name: "SALFORD 618",
+        metaTitle: "SALFORD 618",
+        metaDescription: "SALFORD 618",
+        banner: "/products/618.webp",
+   excerpt: [
+      {
+        type: "p",
+        text: "SALFORD 618 is a fine, interior-grade rutile titanium dioxide pigment offering good gloss, high hiding power, and enhanced durability for indoor paints and coatings.",
+      },
+    ],
+
+        description: [
+          { type: "h2", text: "SALFORD 618" },
+          {
+            type: "p",
+            text: "SALFORD 618 is a rutile titanium dioxide pigment manufactured by the chloride process for general interior coatings applications. It is a fine dry powder with the following general properties.",
+          },
+          { type: "h2", text: "Key Features – SALFORD 618" },
+
+          {
+            type: "ul",
+            items: [
+              "Good gloss, high hiding power",
+              "Excellent dispersion",
+              "Increases the durability of paints used indoors",
+            ],
+          },
+
+          {
+            type: "h2",
+            text: "Application - SALFORD 618 is recommended for evaluation in:",
+          },
+          {
+            type: "ul",
+            items: [
+              "Interior industrial coatings",
+              "Powder coatings",
+              "Coil coatings",
+              "Container coatings",
+              "Electrodeposition applications",
+              "Interior architectural coatings",
+            ],
+          },
+        ],
+        pdfs: {
+          sds: "/sds.pdf",
+          tds: "/products/618.pdf",
+        },
+      },
+
+
+        {
+        id: "salford-620",
+        name: "SALFORD 620",
+        metaTitle: "SALFORD 620",
+        metaDescription: "SALFORD 620",
+        banner: "/products/620.webp",
+        excerpt: [
+      {
+        type: "p",
+        text: "SALFORD 620 is a blue-tint, sulphate-process rutile titanium dioxide pigment with high gloss, excellent opacity, and easy dispersion for a wide range of paint and ink applications.",
+      },
+    ],
+
+
+        description: [
+          { type: "h2", text: "SALFORD 620" },
+          {
+            type: "p",
+            text: "SALFORD 620 is a multi-purpose, blue tint tone, sulphate-process, rutile titanium dioxide pigment, designed to give an outstanding combination of ease of dispersion, excellent optical properties and good durability in a wide range of paints and ink applications.",
+          },
+          { type: "h2", text: "Key Features – SALFORD 620" },
+
+        {
+  type: "ul",
+  items: [
+    "Highest gloss",
+    "Excellent opacity",
+    "High tint strength",
+    "High brightness",
+    "Blue tint tone",
+    "Good durability",
+    "Ease of dispersion",
+  ],
+},
+
+
+          {
+            type: "h2",
+            text: "Application - SALFORD 620 is recommended for evaluation in:",
+          },
+       {
+  type: "ul",
+  items: [
+    "Industrial coating",
+    "Powder coating",
+    "External & internal architectural coating",
+  ],
+},
+
+        ],
+        pdfs: {
+          sds: "/sds.pdf",
+          tds: "/products/620.pdf",
+        },
+      },
+
       {
         id: "salford-628",
         name: "SALFORD 628",
@@ -488,7 +603,57 @@ export const categories = [
         },
       },
 
-      // product 2
+       {
+        id: "salford-660",
+        name: "SALFORD 660",
+        metaTitle: "SALFORD 660",
+        metaDescription: "SALFORD 660",
+        banner: "/products/660.webp",
+ excerpt: [
+      {
+        type: "p",
+        text: "SALFORD 660 provides exceptional durability, superior chalk and UV resistance, and excellent colour retention, ideal for demanding industrial and automotive applications.",
+      },
+    ],
+
+
+        description: [
+          { type: "h2", text: "SALFORD 660" },
+          {
+            type: "p",
+            text: "SALFORD 660 is a rutile titanium dioxide (TiO₂) pigment that provides proven protection in the most demanding and unforgiving weather and industrial environments.",
+          },
+          { type: "h2", text: "Key Features – SALFORD 660" },
+
+          {
+            type: "ul",
+            items: [
+              "Exceptional durability, providing chalk resistance and excellent colour retention to keep coatings looking new longer",
+              "Surface design that provides a better film cure in acid-catalyzed coatings by optimizing the acid catalyst's effectiveness",
+              "Surface design that resists photocatalysis and UV degradation, protecting the coating's performance and appearance",
+            ],
+          },
+
+          {
+            type: "h2",
+            text: "Application - SALFORD 660 is recommended for evaluation in:",
+          },
+          {
+            type: "ul",
+            items: [
+              "Automotive OEM topcoat and refinish",
+              "High durability exterior coil coatings",
+              "Aerospace coatings",
+              "Powder coatings",
+              "Other industrial OEM and specialty coatings requiring superior chalk resistance and tint retention",
+            ],
+          },
+        ],
+        pdfs: {
+          sds: "/sds.pdf",
+          tds: "/products/660.pdf",
+        },
+      },
 
       {
         id: "salford-686",
@@ -545,173 +710,8 @@ export const categories = [
         },
       },
 
-      // product 3
-
-      {
-        id: "salford-660",
-        name: "SALFORD 660",
-        metaTitle: "SALFORD 660",
-        metaDescription: "SALFORD 660",
-        banner: "/products/660.webp",
- excerpt: [
-      {
-        type: "p",
-        text: "SALFORD 660 provides exceptional durability, superior chalk and UV resistance, and excellent colour retention, ideal for demanding industrial and automotive applications.",
-      },
-    ],
-
-
-        description: [
-          { type: "h2", text: "SALFORD 660" },
-          {
-            type: "p",
-            text: "SALFORD 660 is a rutile titanium dioxide (TiO₂) pigment that provides proven protection in the most demanding and unforgiving weather and industrial environments.",
-          },
-          { type: "h2", text: "Key Features – SALFORD 660" },
-
-          {
-            type: "ul",
-            items: [
-              "Exceptional durability, providing chalk resistance and excellent colour retention to keep coatings looking new longer",
-              "Surface design that provides a better film cure in acid-catalyzed coatings by optimizing the acid catalyst's effectiveness",
-              "Surface design that resists photocatalysis and UV degradation, protecting the coating's performance and appearance",
-            ],
-          },
-
-          {
-            type: "h2",
-            text: "Application - SALFORD 660 is recommended for evaluation in:",
-          },
-          {
-            type: "ul",
-            items: [
-              "Automotive OEM topcoat and refinish",
-              "High durability exterior coil coatings",
-              "Aerospace coatings",
-              "Powder coatings",
-              "Other industrial OEM and specialty coatings requiring superior chalk resistance and tint retention",
-            ],
-          },
-        ],
-        pdfs: {
-          sds: "/sds.pdf",
-          tds: "/products/660.pdf",
-        },
-      },
-
-      // product 4
-
-      {
-        id: "salford-618",
-        name: "SALFORD 618",
-        metaTitle: "SALFORD 618",
-        metaDescription: "SALFORD 618",
-        banner: "/products/618.webp",
-   excerpt: [
-      {
-        type: "p",
-        text: "SALFORD 618 is a fine, interior-grade rutile titanium dioxide pigment offering good gloss, high hiding power, and enhanced durability for indoor paints and coatings.",
-      },
-    ],
-
-        description: [
-          { type: "h2", text: "SALFORD 618" },
-          {
-            type: "p",
-            text: "SALFORD 618 is a rutile titanium dioxide pigment manufactured by the chloride process for general interior coatings applications. It is a fine dry powder with the following general properties.",
-          },
-          { type: "h2", text: "Key Features – SALFORD 618" },
-
-          {
-            type: "ul",
-            items: [
-              "Good gloss, high hiding power",
-              "Excellent dispersion",
-              "Increases the durability of paints used indoors",
-            ],
-          },
-
-          {
-            type: "h2",
-            text: "Application - SALFORD 618 is recommended for evaluation in:",
-          },
-          {
-            type: "ul",
-            items: [
-              "Interior industrial coatings",
-              "Powder coatings",
-              "Coil coatings",
-              "Container coatings",
-              "Electrodeposition applications",
-              "Interior architectural coatings",
-            ],
-          },
-        ],
-        pdfs: {
-          sds: "/sds.pdf",
-          tds: "/products/618.pdf",
-        },
-      },
-
-
-      
-      // product 5
-
-      {
-        id: "salford-620",
-        name: "SALFORD 620",
-        metaTitle: "SALFORD 620",
-        metaDescription: "SALFORD 620",
-        banner: "/products/620.webp",
-        excerpt: [
-      {
-        type: "p",
-        text: "SALFORD 620 is a blue-tint, sulphate-process rutile titanium dioxide pigment with high gloss, excellent opacity, and easy dispersion for a wide range of paint and ink applications.",
-      },
-    ],
-
-
-        description: [
-          { type: "h2", text: "SALFORD 620" },
-          {
-            type: "p",
-            text: "SALFORD 620 is a multi-purpose, blue tint tone, sulphate-process, rutile titanium dioxide pigment, designed to give an outstanding combination of ease of dispersion, excellent optical properties and good durability in a wide range of paints and ink applications.",
-          },
-          { type: "h2", text: "Key Features – SALFORD 620" },
-
-        {
-  type: "ul",
-  items: [
-    "Highest gloss",
-    "Excellent opacity",
-    "High tint strength",
-    "High brightness",
-    "Blue tint tone",
-    "Good durability",
-    "Ease of dispersion",
-  ],
-},
-
-
-          {
-            type: "h2",
-            text: "Application - SALFORD 620 is recommended for evaluation in:",
-          },
-       {
-  type: "ul",
-  items: [
-    "Industrial coating",
-    "Powder coating",
-    "External & internal architectural coating",
-  ],
-},
-
-        ],
-        pdfs: {
-          sds: "/sds.pdf",
-          tds: "/products/620.pdf",
-        },
-      },
+   
+    
 
     ],
   },
